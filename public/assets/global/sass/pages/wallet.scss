@@ -1,0 +1,296 @@
+@import '../variables/variables';
+.wallet {
+    .react-bs-table-container {
+        .react-bs-table-tool-bar {
+            .col-lg-8 {
+                @media #{$mobile-screen} {
+                    width: 100%;
+                }
+            }
+            .col-lg-4 {
+                @media #{$mobile-screen} {
+                    display: none;
+                }
+            }
+        }
+        .react-bs-table {
+            table {
+                thead {
+                    tr {
+                        th {
+                            @media #{$mobile-screen} {
+                                font-size: 11px;
+                            }
+                            &.id-col-header {
+                                @media #{$tablet-screen} {
+                                    display: none !important;
+                                }
+                                @media #{$desktop-screen} {
+                                    display: table-cell !important;
+                                }
+                            }
+                            &.coin-name-col-header {
+                                @media #{$desktop-screen} {
+                                    width: 150px;
+                                }
+                                @media #{$mobile-screen} {
+                                    width: 22%;
+                                }
+                            }
+                            &.receive-holding-balance-col-header {
+                                @media #{$tablet-screen} {
+                                    display: table-cell !important;
+                                }
+                                @media #{$desktop-screen} {
+                                    display: table-cell !important;
+                                }
+                            }
+                            &.current-balance-col-header {
+                                @media #{$tablet-screen} {
+                                    display: table-cell !important;
+                                }
+                                @media #{$desktop-screen} {
+                                    display: table-cell !important;
+                                }
+                            }
+                            &.send-holding-balance-col-header {
+                                span {
+                                    @media #{$mobile-screen} {
+                                        display: none;
+                                    }
+                                }
+                            }
+                            &.withdraw-link-col-header {
+                                @media #{$mobile-screen} {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            @media #{$mobile-screen} {
+                                font-size: 11px;
+                                vertical-align: top;
+                                text-align: left !important;
+                            }
+                            &.id-col {
+                                @media #{$tablet-screen} {
+                                    display: none !important;
+                                }
+                                @media #{$desktop-screen} {
+                                    display: table-cell !important;
+                                }
+                            }
+                            &.coin-name-col {
+                                @media #{$desktop-screen} {
+                                    width: 150px;
+                                }
+                                @media #{$mobile-screen} {
+                                    width: 20%;
+                                }
+                                .coin-logo {
+                                    width: 20px;
+                                    margin-right: 10px;
+                                    display: inline-block;
+                                    vertical-align: bottom;
+                                }
+                            }
+                            &.receive-holding-balance-col {
+                                @media #{$tablet-screen} {
+                                    display: table-cell !important;
+                                }
+                                @media #{$desktop-screen} {
+                                    display: table-cell !important;
+                                }
+                            }
+                            &.current-balance-col {
+                                @media #{$tablet-screen} {
+                                    display: table-cell !important;
+                                }
+                                @media #{$desktop-screen} {
+                                    display: table-cell !important;
+                                }
+                            }
+                            &.send-holding-balance-col {
+                                @media #{$mobile-screen} {
+                                    width: 50%;
+                                }
+                            }
+                            &.withdraw-link-col,
+                            &.deposit-link-col {
+                                @media #{$mobile-screen} {
+                                    width: 35%;
+                                    padding-top: 15px;
+                                    padding-bottom: 15px;
+                                }
+                                button,
+                                a {
+                                    @media #{$mobile-screen} {
+                                        padding: 5px 2px;
+                                        font-size: 10px;
+                                        min-width: inherit;
+                                        height: auto;
+                                        width: 100%;
+                                        max-width: 100%;
+                                        white-space: nowrap;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                    }
+                                    @media #{$tablet-screen} {
+                                        padding: 5px;
+                                        font-size: 10px;
+                                        min-width: inherit;
+                                        height: auto;
+                                        width: 100%;
+                                        max-width: 100%;
+                                        white-space: nowrap;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                    }
+                                    i {
+                                        @media #{$mobile-screen} {
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            }
+                            &.withdraw-link-col {
+                                @media #{$mobile-screen} {
+                                    display: none;
+                                }
+                            }
+                            .combined-block {
+                                p {
+                                    @media #{$mobile-screen} {
+                                        margin-bottom: 0;
+                                    }
+                                    &.title {
+                                        @media #{$mobile-screen} {
+                                            margin-top: 10px;
+                                            font-weight: 600;
+                                        }
+                                        &:first-child {
+                                            @media #{$mobile-screen} {
+                                                margin-top: 0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .wallet-button {
+                                min-width: 120px;
+                                padding-left: 10px;
+                                padding-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .react-bs-table-pagination {
+            .col-lg-6 {
+                .dropdown-toggle {
+                    margin-bottom: 10px;
+                }
+                @media #{$mobile-screen} {
+                    width: 100% !important;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+
+.wallet-popup {
+    top: 13%;
+}
+
+.panel-heading.coin-deposit-header {
+    margin-bottom: 20px
+}
+
+.form-group.form-md-line-input.bitmoon-input .form-control  {
+    cursor: text;
+}
+
+.line-break {
+    word-wrap: break-word;
+}
+
+.modal-dialog  {
+    &.sending-dialog {
+        .panel-body {
+            button {
+                &.btn-wallet {
+                    margin-top: 10px;
+                    margin-left: 10px;
+                }
+                &.btn-wallet-confirm {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    &.deposit-dialog {
+        margin-top: 0;
+        margin-bottom: 0;
+        overflow-x: hidden;
+        .modal-content {
+            border: none;
+        }
+    }
+
+    .value--address {
+        input {
+            width: 100%;
+            padding: 9px 8px;
+            border: 1px solid #c27d0e;
+            font-size: 13px;
+        }
+    }
+
+    .value--tag {
+        input {
+            width: 100%;
+            padding: 9px 8px;
+            border: 1px solid #c27d0e;
+            font-size: 13px;
+        }
+    }
+
+    .address-coin {
+        word-break: break-all;
+    }
+}
+
+@media #{$mobile-screen} {
+    body.ReactModal__Body--open {
+        overflow: hidden;
+
+        .ReactModal__Content {
+            max-height: 435px;
+            top: 50% !important;
+        }
+
+        .value--address,
+        .value--tag {
+            display: -ms-flex;
+            display: -webkit-flex;
+            display: flex;
+            align-items: center;
+            overflow: initial;
+            overflow: unset;
+        }
+
+        .value--QR {
+            text-align: center;
+        }
+
+        .btn-close--popup {
+            width: 100%;
+        }
+    }
+}

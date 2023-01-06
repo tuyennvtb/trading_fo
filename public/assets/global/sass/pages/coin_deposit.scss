@@ -1,0 +1,11 @@
+@import '../variables/variables';
+.coin-deposit {
+    .copy {
+        @media #{$desktop-screen} {
+            margin-top: 20px
+        }
+    }
+    .row.info-note {
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,196 @@
+/* Variables */
+.bitmoon-page .homepage .homepage-slider {
+  background: #fff; }
+  .bitmoon-page .homepage .homepage-slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 2; }
+    .bitmoon-page .homepage .homepage-slider .slick-arrow::before {
+      font-size: 30px; }
+  .bitmoon-page .homepage .homepage-slider .slick-active img {
+    -webkit-filter: grayscale(0) !important;
+    filter: grayscale(0) !important; }
+  .bitmoon-page .homepage .homepage-slider .slick-next {
+    right: 3%; }
+  .bitmoon-page .homepage .homepage-slider .slick-prev {
+    left: 3%; }
+  .bitmoon-page .homepage .homepage-slider h1 {
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+    color: #fff; }
+    @media (max-width: 812px) {
+      .bitmoon-page .homepage .homepage-slider h1 {
+        font-size: 24px; } }
+  .bitmoon-page .homepage .homepage-slider .main-image {
+    text-decoration: none;
+    position: relative;
+    justify-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    height: calc(((110vh - 76px) - 20px) - 60px);
+    display: flex !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+    .bitmoon-page .homepage .homepage-slider .main-image:hover {
+      text-decoration: none; }
+    @media (max-width: 1600px) {
+      .bitmoon-page .homepage .homepage-slider .main-image {
+        height: calc(((100vh - 76px) - 120px) - 155px); } }
+    @media (max-width: 992px) {
+      .bitmoon-page .homepage .homepage-slider .main-image {
+        height: calc(((100vh - 76px) - 120px) - 550px); } }
+    @media (max-width: 600px) {
+      .bitmoon-page .homepage .homepage-slider .main-image {
+        height: calc(((100vh - 76px) - 120px) - 290px); } }
+  .bitmoon-page .homepage .homepage-slider .slick-slide img {
+    border: 5px solid #fff;
+    display: block;
+    margin: auto; }
+  .bitmoon-page .homepage .homepage-slider img {
+    max-width: 100%;
+    height: 80px;
+    margin: 0 0 1.45rem;
+    padding: 0; }
+  @media (min-width: 1600px) {
+    .bitmoon-page .homepage .homepage-slider .slick-dots {
+      bottom: 40px; } }
+  .bitmoon-page .homepage .homepage-slider .slick-dots li {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0; }
+  .bitmoon-page .homepage .homepage-slider .slick-thumb li {
+    width: 150px;
+    height: 70px; }
+    .bitmoon-page .homepage .homepage-slider .slick-thumb li img {
+      -webkit-filter: grayscale(100%);
+      /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%); }
+
+.bitmoon-page .homepage .page-container {
+  min-height: 420px; }
+  @media (max-width: 812px) {
+    .bitmoon-page .homepage .page-container .flash-screen .flash-message {
+      top: 40%;
+      padding: 0 5px; } }
+  @media (max-width: 812px) {
+    .bitmoon-page .homepage .page-container .flash-screen .flash-message h1 {
+      white-space: normal;
+      line-height: 30px;
+      font-size: 22px; } }
+  @media (max-width: 812px) {
+    .bitmoon-page .homepage .page-container .flash-screen .flash-message h5 {
+      white-space: normal;
+      line-height: 20px; } }
+  @media (max-width: 812px) {
+    .bitmoon-page .homepage .page-container .flash-screen .flash-message .countdown-calendar h3 {
+      white-space: normal;
+      line-height: 30px;
+      font-size: 22px; } }
+  @media (max-width: 812px) {
+    .bitmoon-page .homepage .page-container .flash-screen .flash-message .countdown-calendar a {
+      margin-top: 25px; } }
+
+@media (max-width: 812px) {
+  .bitmoon-page .homepage .sec-about-ucoincash {
+    padding-bottom: 20px; } }
+
+.bitmoon-page .homepage .sec-about-ucoincash h1 {
+  margin-bottom: 30px; }
+  @media (max-width: 812px) {
+    .bitmoon-page .homepage .sec-about-ucoincash h1 {
+      margin-bottom: 5px;
+      padding-top: 0;
+      font-size: 24px; } }
+
+.bitmoon-page .homepage .sec-about-ucoincash p.text-intro {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500; }
+  @media (max-width: 812px) {
+    .bitmoon-page .homepage .sec-about-ucoincash p.text-intro {
+      margin: 10px 0 0;
+      font-size: 14px; } }
+
+@media (max-width: 812px) {
+  .bitmoon-page .homepage .why-ucoincash h1 {
+    font-size: 24px;
+    margin-bottom: 20px; } }
+
+@media (min-width: 414px) and (max-width: 768px) {
+  .bitmoon-page .homepage .why-ucoincash .box-why {
+    padding: 20px; } }
+
+@media (max-width: 812px) {
+  .bitmoon-page .homepage .why-ucoincash .box-why .title-box {
+    height: 120px; } }
+
+.bitmoon-page .homepage .about-bitmoon-tab {
+  margin-top: 30px; }
+  .bitmoon-page .homepage .about-bitmoon-tab .tabbable-custom {
+    margin-bottom: 0; }
+  .bitmoon-page .homepage .about-bitmoon-tab .nav.nav-tabs li.active {
+    border-color: #d38e1f; }
+    .bitmoon-page .homepage .about-bitmoon-tab .nav.nav-tabs li.active a {
+      color: #d38e1f; }
+  .bitmoon-page .homepage .about-bitmoon-tab .nav.nav-tabs li a {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 30px;
+    padding-right: 30px; }
+    @media (max-width: 812px) {
+      .bitmoon-page .homepage .about-bitmoon-tab .nav.nav-tabs li a {
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 10px; } }
+  .bitmoon-page .homepage .about-bitmoon-tab .tab-content {
+    padding: 0; }
+    .bitmoon-page .homepage .about-bitmoon-tab .tab-content .tab-pane .list-title {
+      font-weight: 700;
+      font-size: 14px; }
+    .bitmoon-page .homepage .about-bitmoon-tab .tab-content .tab-pane .mt-element-list .mt-list-container {
+      border: none; }
+      .bitmoon-page .homepage .about-bitmoon-tab .tab-content .tab-pane .mt-element-list .mt-list-container ul li .list-item-content {
+        padding-left: 40px;
+        font-weight: 600;
+        font-size: 14px; }
+        @media (max-width: 812px) {
+          .bitmoon-page .homepage .about-bitmoon-tab .tab-content .tab-pane .mt-element-list .mt-list-container ul li .list-item-content {
+            padding-right: 0;
+            font-size: 13px; } }
+    .bitmoon-page .homepage .about-bitmoon-tab .tab-content .tab-pane .mt-element-step .step-line .mt-step-col.first .mt-step-number {
+      color: #3598dc !important;
+      border-color: #3598dc !important; }
+    .bitmoon-page .homepage .about-bitmoon-tab .tab-content .tab-pane .mt-element-step .step-line .mt-step-col.first .mt-step-title:before, .bitmoon-page .homepage .about-bitmoon-tab .tab-content .tab-pane .mt-element-step .step-line .mt-step-col.first .mt-step-title:after {
+      background-color: #3598dc !important; }
+    .bitmoon-page .homepage .about-bitmoon-tab .tab-content .tab-pane .mt-element-step .step-line .mt-step-col.last .mt-step-number {
+      color: #26C281 !important;
+      border-color: #26C281 !important; }
+    .bitmoon-page .homepage .about-bitmoon-tab .tab-content .tab-pane .mt-element-step .step-line .mt-step-col.last .mt-step-title:before, .bitmoon-page .homepage .about-bitmoon-tab .tab-content .tab-pane .mt-element-step .step-line .mt-step-col.last .mt-step-title:after {
+      background-color: #26C281 !important; }
+    .bitmoon-page .homepage .about-bitmoon-tab .tab-content .tab-pane .mt-element-step .step-line .mt-step-col .mt-step-title {
+      font-size: 16px;
+      padding-top: 15px;
+      padding-bottom: 10px;
+      color: #333 !important; }
+      .bitmoon-page .homepage .about-bitmoon-tab .tab-content .tab-pane .mt-element-step .step-line .mt-step-col .mt-step-title.first-title:before, .bitmoon-page .homepage .about-bitmoon-tab .tab-content .tab-pane .mt-element-step .step-line .mt-step-col .mt-step-title.first-title:after {
+        background-color: #d38e1f; }
+    .bitmoon-page .homepage .about-bitmoon-tab .tab-content .tab-pane .mt-element-step .step-line .mt-step-col .mt-step-content {
+      font-size: 16px;
+      color: #333 !important; }
+
+@media screen and (max-width: 992px) {
+  .bitmoon-page .homepage .page-container {
+    min-height: 40px; } }
+
+.right {
+  float: right !important; }
+
+.left {
+  float: left !important; }
+
+/*# sourceMappingURL=homepage.css.map */

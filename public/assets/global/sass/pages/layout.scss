@@ -1,0 +1,1142 @@
+@import '../variables/variables';
+body {
+    &.menu-open {
+        overflow: hidden;
+        &:after {
+            content: '';
+            display: block;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1000;
+            background: rgba(0, 0, 0, 0.7);
+        }
+    }
+    .bitmoon-page {
+        //*Responsive Menu Styles*//
+        .page-header {
+            z-index: 99999;
+            @media #{$mobile-screen} {
+                background: rgba(87, 57, 17, 0.41);
+                &.menu-bg {
+                    background: $brown;
+                }
+            }
+            &.menu-fixed.authenticated {
+                .main-nav {
+                    .about-us,
+                    .how-to-use,
+                    .risk {
+                        display: none;
+                    }
+                }
+            }
+            .page-header-inner {
+                .page-logo {
+                    width: auto;
+                    padding-right: 0;
+                    @media #{$mobile-screen} {
+                        padding-left: 0;
+                    }
+                    a {
+                        img {
+                            margin-right: 0;
+                            @media #{$mobile-screen} {
+                                width: 115px;
+                                margin: 5px 10px 0;
+                            }
+                        }
+                    }
+                }
+                .page-actions {
+                    @media #{$mobile-screen} {
+                        margin-top: 12px;
+                        margin-right: 15px;
+                        margin-bottom: 0;
+                        float: right
+                    }
+                    @media #{$mobile-screen-xs} {
+                        margin-left: 0;
+                    }
+                    @media #{$tablet-screen-portrait} {
+                        margin-top: 18px;
+                    }
+                    ul.navbar-nav {
+                        li.dropdown-language {
+                            a.dropdown-toggle {
+                                @media #{$mobile-screen} {
+                                    color: white;
+                                    padding: 10px 0;
+                                    &:focus,
+                                    &:hover {
+                                        background: none;
+                                    }
+                                    +ul.dropdown-menu {
+                                        right: 6px;
+                                        li {
+                                            a {
+                                                color: $brown;
+                                                img {
+                                                    pointer-events: none;
+                                                    margin-bottom: 3px;
+                                                    margin-right: 5px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    img {
+                                        width: 18px;
+                                    }
+                                    .langname {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .extended-user-action-link {
+                    .navbar-nav {
+                        @media #{$mobile-screen} {
+                            width: 30%;
+                            margin-top: 29px;
+                        }
+                        @media #{$mobile-screen-xs} {
+                            width: 40%;
+                            margin-top: 29px;
+                        }
+                        @media #{$tablet-screen-portrait} {
+                            width: 18%;
+                        }
+                        li {
+                            &.dropdown-user {
+                                @media #{$tablet-screen-portrait} {
+                                    padding-top: 17px;
+                                    a {
+                                        color: $yellow;
+                                        // &.profile-dropdown-toggle {
+                                        //     width: 200px;
+                                        // }
+                                    }
+                                }
+
+                                @media (min-width: 768px) and (max-width : 812px) {
+                                    padding-top: 0px !important;
+                                }
+
+                                @media #{$mobile-screen} {
+                                    a {
+                                        color: $yellow;
+                                        &.profile-dropdown-toggle {
+                                            width: 100px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            a {
+                                @media #{$mobile-screen} {
+                                    float: left;
+                                    color: $yellow;
+                                    padding: 0;
+                                    margin-right: 0;
+                                    width: 60px;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    &:focus {
+                                        background: $brown;
+                                    }
+                                }
+                            }
+                            button {
+                                @media #{$mobile-screen} {
+                                    float: left;
+                                    background: none;
+                                    border: none;
+                                    color: $yellow;
+                                }
+                                @media #{$tablet-screen-portrait} {
+                                    display: none !important;
+                                }
+                            }
+                        }
+                    }
+                }
+                .page-top {
+                    @media #{$menu-nav-head} {
+                        height: auto;
+                        max-height: 450px;
+                        width: 100%;
+                        padding: 0;
+                        &.navbar-collapse.collapse {
+                            display: none !important;
+                        }
+                        &.navbar-collapse.collapse.in {
+                            display: block !important;
+                            margin: 0;
+                            border: 0;
+                            box-shadow: 0 0 1px 1px rgba(20, 23, 28, .3), 0 3px 1px 0 rgba(20, 23, 28, .3);
+                        }
+                    }
+                    .top-menu {
+                        @media (min-width : 1330px) {
+                            font-size: 8px;
+                        }
+
+                        @media #{$menu-nav-head} {
+                            float: none;
+                            display: block;
+                            background: white;
+                            margin: 0;
+                        }
+                        ul.navbar-nav {
+                            li {
+                                &.dropdown-user {
+                                    a {
+                                        &.dropdown-toggle {
+                                            @media #{$desktop-screen} {
+                                                color: $yellow;
+                                            }
+                                            &:hover,
+                                            &:visited,
+                                            &:focus {
+                                                @media #{$desktop-screen} {
+                                                    color: white;
+                                                    i {
+                                                        color: white;
+                                                    }
+                                                }
+                                            }
+                                            i {
+                                                @media #{$desktop-screen} {
+                                                    color: $yellow;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .dropdown-menu.dropdown-menu-default {
+                                        @media #{$desktop-screen} {
+                                            background: $brown;
+                                            opacity: 0.95;
+                                            width: auto;
+                                        }
+                                        li {
+                                            &.divider {
+                                                background: white;
+                                            }
+                                            a {
+                                                @media #{$desktop-screen} {
+                                                    color: white;
+                                                    font-size: 10px;
+                                                    padding: 15px 10px;
+                                                    font-weight: lighter;
+                                                    font-family: "Open Sans", sans-serif;
+                                                }
+                                                &:hover {
+                                                    @media #{$desktop-screen} {
+                                                        background: $yellow;
+                                                        color: white;
+                                                    }
+                                                }
+                                                i {
+                                                    @media #{$desktop-screen} {
+                                                        color: white;
+                                                    }
+                                                    @media #{$menu-nav-head} {
+                                                        color: $yellow;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                &.dropdown-wallet {
+                                    .dropdown-menu.dropdown-menu-default {
+                                        @media #{$desktop-screen} {
+                                            background: $brown;
+                                            opacity: 0.95;
+                                            width: auto;
+                                        }
+                                    }
+                                }
+                            }
+                            @media #{$menu-nav-head} {
+                                display: block;
+                                float: none !important;
+                                margin: 0;
+                                &.account-buttons {
+                                    li {
+                                        float: left !important;
+                                        width: 50%;
+                                        a.btn-transparent {
+                                            color: white;
+                                            background: $yellow;
+                                            border: none;
+                                        }
+                                    }
+                                }
+                                li {
+                                    display: block;
+                                    float: none;
+                                    &.dropdown-language {
+                                        display: none;
+                                    }
+                                    &.dropdown-user {
+                                        height: auto;
+                                        a {
+                                            width: 100%;
+                                            float: left;
+                                            padding-left: 0;
+                                            &.dropdown-toggle {
+                                                i {
+                                                    color: inherit;
+                                                }
+                                                &:hover {
+                                                    color: white;
+                                                }
+                                            }
+                                        }
+                                        button {
+                                            position: absolute;
+                                            right: 15px;
+                                            top: 15px;
+                                            i {
+                                                font-size: 14px;
+                                            }
+                                        }
+                                    }
+                                    &:last-child {
+                                        a {
+                                            border-bottom: none;
+                                        }
+                                    }
+                                    a {
+                                        padding: 10px;
+                                        font-weight: bold;
+                                        color: $yellow;
+                                        border-bottom: 1px solid;
+                                        i {
+                                            display: inline-block !important;
+                                            margin-right: 5px;
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+                            @media #{$tablet-screen} {
+                                margin-right: 0;
+                            }
+                            &.main-nav {
+                                @media #{$desktop-screen} {
+                                    margin-right: 0;
+                                }
+                                li {
+                                    a {
+                                        @media #{$desktop-screen} {
+                                            padding-left: 5px;
+                                            padding-right: 5px;
+                                        }
+                                    }
+                                }
+                            }
+                            li {
+                                a {
+                                    @media #{$tablet-screen} {
+                                        font-size: 8px;
+                                        padding-left: 5px;
+                                        padding-right: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .menu-toggler.responsive-toggler {
+                    background-image: url('/assets/global/img/sidebar-toggle-light.png');
+                    margin-top: 25px;
+                    width: 30px;
+                    height: 30px;
+                    opacity: 1;
+                    background-size: 30px;
+                }
+            }
+        }
+        .page-container {
+            @media #{$tablet-screen-portrait} {
+                padding: 0;
+            }
+            .page-sidebar-wrapper {
+                @media #{$mobile-screen} {
+                    z-index: 9999;
+                    position: fixed;
+                    width: 100%;
+                    top: 66px;
+                    margin: 0;
+                    padding: 0;
+                    height: 400px;
+                }
+                &.collapse {
+                    @media #{$tablet-screen} {
+                        display: block;
+                    }
+                    @media #{$desktop-screen} {
+                        display: block;
+                    }
+                }
+                .page-sidebar,
+                .page-sidebar.in {
+                    @media #{$mobile-screen} {
+                        margin: 0 !important;
+                    }
+                    @media #{$mobile-screen-xs} {
+                        height: 515px;
+                    }
+                }
+            }
+            .page-content-wrapper {
+                @media #{$mobile-screen} {
+                    margin-top: 65px;
+                }
+            }
+        } //*End Responsive Menu Styles*//
+        // Start coin price table styles
+        .react-bs-table-container {
+            .react-bs-table-tool-bar {
+                .col-lg-4 {
+                    width: 100%;
+                    .react-bs-table-search-form {
+                        .form-control {
+                            height: 40px;
+                            font-size: 14px;
+                        }
+                        .input-group-btn {
+                            .btn {
+                                height: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+            table {
+                thead {
+                    tr {
+                        th.center {
+                            @media #{$mobile-screen} {
+                                font-size: 14px;
+                                text-align: center !important;
+                            }
+                        }
+                        th {
+                            @media #{$mobile-screen} {
+                                font-size: 14px;
+                                text-align: left !important;
+                            }
+                            &.coin-name-col-header {
+                                @media #{$mobile-screen-xs} {
+                                    width: 75px;
+                                }
+                                @media #{$phablet-screen} {
+                                    width: 29%;
+                                }
+                            }
+                            &.bid-price-col-header,
+                            &.ask-price-col-header {
+                                @media #{$phablet-screen} {
+                                    width: 21%;
+                                }
+                            }
+                            &.volume-col-header,
+                            &.change24-col-header {
+                                @media #{$desktop-screen} {
+                                    display: table-cell !important;
+                                }
+                            }
+                            &.action-button-col-header {
+                                display: table-cell !important;
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            @media #{$mobile-screen} {
+                                padding-left: 0;
+                                padding-right: 0;
+                            }
+                            &.volume-col,
+                            &.change24-col {
+                                @media #{$desktop-screen} {
+                                    display: table-cell !important;
+                                }
+                            }
+                            &.bid-price-col,
+                            &.ask-price-col {
+                                @media #{$mobile-screen} {
+                                    text-align: left !important;
+                                    font-size: 14px;
+                                    width: 100px;
+                                }
+                                @media #{$mobile-screen-xs} {
+                                    width: 80px;
+                                }
+                                @media #{$tablet-screen-portrait} {
+                                    width: 20%;
+                                    padding-left: 5%;
+                                }
+                            }
+                            &.coin-name-col {
+                                @media #{$tablet-screen-portrait} {
+                                    width: 25%
+                                }
+                                a {
+                                    span {
+                                        @media #{$mobile-screen} {
+                                            font-size: 11px;
+                                            width: 90%;
+                                            margin-left: 0;
+                                        }
+                                        @media #{$tablet-screen-portrait} {
+                                            width: 100%
+                                        }
+                                    }
+                                }
+                                .btn {
+                                    @media #{$desktop-screen} {
+                                        text-align: left;
+                                        margin: 0;
+                                        width: 100%;
+                                    }
+                                    @media #{$mobile-screen} {
+                                        font-size: 11px;
+                                    }
+                                    .coin-name {
+                                        @media #{$mobile-screen} {
+                                            display: none;
+                                        }
+                                    }
+                                    .coin-logo {
+                                        width: 24px;
+                                        margin-right: 10px;
+                                        display: inline-block;
+                                        vertical-align: bottom;
+                                        @media #{$mobile-screen} {
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            }
+                            &.action-button-col {
+                                /*
+                                .btn {
+                                    @media #{$mobile-screen} {
+                                        padding: 5px 10px;
+                                        font-size: 11px;
+                                    }
+                                    @media #{$tablet-screen-portrait} {
+                                        width: 60%;
+                                    }
+                                    i {
+                                        @media #{$mobile-screen} {
+                                            display: none;
+                                        }
+                                    }
+                                    span {
+                                        @media #{$mobile-screen} {
+                                            font-size: 11px;
+                                        }
+                                    }
+                                }
+                                */
+                                @media #{$tablet-screen} {
+                                    display: table-cell !important;
+                                }
+                                @media #{$desktop-screen} {
+                                    display: table-cell !important;
+                                }
+                            }
+                            /*
+                            &.action-button-col {
+                                display: table-cell !important;
+                            }
+                            */
+                        }
+                    }
+                }
+            }
+        }
+        // End coin price table styles
+        //*Login Page Styles*//
+        .div-authen-layout {
+            @media #{$mobile-screen} {
+                height: 100%;
+                margin-top: 0;
+            }
+            #div-binding-container {
+                @media #{$mobile-screen} {
+                    padding: 0 10px;
+                }
+                h4.h4-title {
+                    @media #{$mobile-screen} {
+                        font-size: 16px;
+                        margin: 20px 0;
+                    }
+                }
+            }
+        } //*Footer Styles*//
+        footer {
+            @media #{$mobile-screen} {
+                display: none;
+            }
+            .container {
+                ul {
+                    li {
+                        &.divider {
+                            list-style: none;
+                            height: 19px;
+                        }
+                        @media #{$mobile-screen} {
+                            list-style: none;
+                        }
+                        a {
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                }
+                ul.menu.simple {
+                    li {
+                        width: 50px;
+                        height: 50px;
+                        a {
+                            overflow: visible;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                }
+                .newsletter-form {
+                    .form-group {
+                        @media #{$mobile-screen} {
+                            width: 100%;
+                            float: none;
+                        }
+                        @media #{$tablet-screen-portrait} {
+                            width: 40%;
+                            float: left;
+                        }
+                    }
+                    .input-group-btn {
+                        @media #{$mobile-screen} {
+                            display: block;
+                            width: 100%;
+                            margin-bottom: 20px;
+                        }
+                        @media #{$tablet-screen-portrait} {
+                            display: table-cell;
+                        }
+                        .btn-subscribe {
+                            @media #{$mobile-screen} {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        } //Global Component
+        .Select {
+            .Select-menu-outer {
+                max-height: 300px;
+                .Select-menu {
+                    max-height: 300px;
+                    overflow-y: scroll;
+                }
+            }
+        }
+        .mt-checkbox {
+            line-height: 21px;
+            width: 100%;
+            text-align: left;
+            margin-left: 15px;
+            span {
+                border: 1px solid $brown;
+                background: white;
+            }
+            &:hover>input:not([disabled]):checked~span,
+            >input:checked~span {
+                webkit-transition: all .3s;
+                -moz-transition: all .3s;
+                -ms-transition: all .3s;
+                -o-transition: all .3s;
+                transition: all .3s;
+                background: $brown;
+                &:after {
+                    left: 6px;
+                    top: 2px;
+                    width: 5px;
+                    height: 10px;
+                    border: solid $yellow;
+                    border-width: 0 2px 2px 0;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+        .mt-radio {
+            &:hover>input:not([disabled]):checked~span,
+            >input:checked~span {
+                webkit-transition: all .3s;
+                -moz-transition: all .3s;
+                -ms-transition: all .3s;
+                -o-transition: all .3s;
+                transition: all .3s;
+                background: $brown;
+            }
+        }
+        .anim-enter {
+            opacity: 0.01;
+        }
+        .anim-enter.anim-enter-active {
+            opacity: 1;
+            transition: opacity 500ms ease-in;
+        }
+        .anim-leave {
+            opacity: 1;
+        }
+        .anim-leave.anim-leave-active {
+            opacity: 0.01;
+            transition: opacity 300ms ease-in;
+        }
+        .bitmoon-input {
+            label {
+                color: $yellow !important;
+            }
+        }
+        .no-border {
+            border: none !important;
+        }
+        .dropdown-user {
+            .dropdown-menu {
+                display: none;
+            }
+        }
+        .dropdown-toggle.profile-dropdown-toggle {
+            display: none;
+        }
+        .full-width-page {
+            .page-content {
+                margin-left: 20px;
+                margin-right: 20px;
+                @media #{$desktop-screen} {
+                    margin-left: 50px;
+                    margin-right: 50px;
+                }
+            }
+            .dropdown-toggle {
+                display: block;
+            }
+            .profile-link {
+                display: none;
+            }
+            .dropdown-user.open {
+                .dropdown-menu {
+                    display: block;
+                    @media #{$mobile-screen} {
+                        top: 35px;
+                        right: 25px;
+                    }
+                    li {
+                        a.nav-link {
+                            @media #{$mobile-screen} {
+                                width: 100%;
+                                padding: 10px;
+                            }
+                            i {
+                                @media #{$mobile-screen} {
+                                    color: $yellow;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .well {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .3), 0 1px 3px rgba(0, 0, 0, .18);
+        }
+        .form-group.form-md-line-input.form-md-floating-label .form-control~label {
+            font-size: 14px;
+        }
+        .btn.btn-success {
+            background-color: $green;
+            &:hover,
+            &:focus {
+                border-color: $green;
+            }
+        }
+        .toast-notify-custom {
+            margin-top: 22%;
+        }
+        .panel-group.accordion {
+            margin: 0;
+            .panel {
+                box-shadow: none;
+                border: none;
+                border-bottom: 1px solid #ccc;
+                margin-top: 1px;
+                &+.panel {
+                    margin-top: 0;
+                }
+                .panel-title {
+                    font-weight: 600;
+                    @media #{$mobile-screen} {
+                        font-size: 14px;
+                    }
+                    .accordion-toggle {
+                        padding: 20px 15px;
+                        span {
+                            @media #{$mobile-screen} {
+                                width: 90%;
+                                display: inline-block;
+                                line-height: 20px;
+                            }
+                        }
+                        .fa-chevron-down {
+                            display: none;
+                        }
+                        .fa-chevron-up {
+                            display: block;
+                        }
+                        &.collapsed {
+                            .fa-chevron-down {
+                                display: block;
+                            }
+                            .fa-chevron-up {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .panel-body {
+                    p {
+                        font-size: 14px;
+                        line-height: 24px;
+                        margin: 5px 0;
+                        @media #{$mobile-screen} {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+            &.bitmoon-user-warning {
+                border: 1px solid $red;
+                box-shadow: none;
+                margin-bottom: 20px;
+                .panel {
+                    .panel-heading {
+                        .panel-title {
+                            span {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                    .panel-body {
+                        padding: 0;
+                        .mt-element-list {
+                            .mt-list-container {
+                                padding-left: 50px;
+                                ul {
+                                    li.mt-list-item {
+                                        .list-icon-container {
+                                            i {
+                                                font-size: 16px;
+                                            }
+                                        }
+                                        .list-item-content {
+                                            padding-left: 45px;
+                                            label {
+                                                font-size: 16px;
+                                                font-weight: 600;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .price-table.exchange {
+        .react-bs-table-container {
+            padding: 0 15px;
+        }
+    }
+    .ReactModal__Content {
+        @media #{$mobile-screen} {
+            max-height: 500px;
+        }
+    }
+    .modal-dialog-content.register-privacy-content {
+        max-width: 800px;
+        .portlet-body {
+            .btn {
+                min-width: 135px;
+                margin: 0 10px;
+                @media #{$mobile-screen} {
+                    min-width: 100px;
+                    margin: 0 5px;
+                }
+            }
+        }
+        .timer {
+            display: inline-block;
+            margin-right: 5px;
+        }
+        .privacy-note {
+            display: inline-block;
+            margin-top: 8px;
+            font-weight: 600;
+            @media #{$mobile-screen} {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .modal-dialog-content.chart-share-dialog {
+        .social-share {
+            margin-top: 15px;
+            font-weight: 600;
+            span {
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+    .tooltip {
+        display: none;
+    }
+    .has-tooltip {
+        &:hover {
+            &+.tooltip {
+                display: block;
+                opacity: .9;
+                filter: alpha(opacity=90);
+            }
+        }
+        &:active:hover {
+            &+.tooltip {
+                position: fixed;
+                display: block;
+                opacity: .9;
+                filter: alpha(opacity=90);
+            }
+        }
+    }
+    .tooltip.top {
+        bottom: 34px;
+    }
+    .global-promotion {
+        .portlet {
+            width: 100%;
+        }
+    }
+    .Select-menu-outer {
+        z-index: 99;
+        background: $light-gray;
+    }
+}
+
+.modal-dialog {
+    margin-top: 0;
+    margin-bottom: 0;
+    .panel-warning {
+        border: none;
+        margin-bottom: 0;
+    }
+    .modal-content {
+        border: none;
+        box-shadow: none;
+    }
+    .modal-body {
+        padding: 0;
+        margin-bottom: 0;
+    }
+    .panel-body {
+        .note-info {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.mt-element-list.exchange-type-list {
+    @media #{$mobile-screen} {
+        margin-bottom: 15px;
+    }
+    .list-simple.mt-list-head {
+        padding: 10px;
+        font-size: 16px;
+    }
+    .mt-list-container {
+        min-height: 230px;
+        border-bottom: none;
+        @media #{$mobile-screen} {
+            min-height: auto;
+        }
+        &.fast-trading-list {
+            border-color: $red;
+        }
+        &.normal-trading-list {
+            border-color: $green;
+        }
+        ul {
+            .mt-list-item {
+                .list-item-content {
+                    padding-right: 0;
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+    .list-footer {
+        &.fast-trading-list {
+            border: 1px solid $red;
+            border-top: none;
+        }
+        &.normal-trading-list {
+            border: 1px solid $green;
+            border-top: none;
+        }
+        .start-trading-btn {
+            width: 90%;
+            margin: 0 auto 15px;
+            display: block;
+            @media #{$mobile-screen} {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.modal-dialog-content {
+    &.exchange-option-content {
+        max-width: 800px;
+        .portlet-title {
+            .caption {
+                span {
+                    color: $yellow;
+                    line-height: 22px;
+                }
+            }
+        }
+        .portlet-body {
+            .container-fluid {
+                padding: 0;
+            }
+            .exchange-option-note {
+                font-weight: 600;
+                margin-top: 15px;
+                .timer {
+                    display: inline;
+                    div {
+                        display: inline;
+                    }
+                }
+            }
+        }
+    }
+    &.chart-screenshot-dialog-content {
+        @media #{$desktop-screen} {
+            max-width: 1250px;
+        }
+        canvas {
+            width: 100% !important;
+            height: auto !important;
+        }
+    }
+}
+
+.feature-market {
+    font-weight: bold;
+    color: $red;
+}
+
+.feature-coins {
+    box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+    padding: 25px 0;
+    .react-bs-table-container {
+        .react-bs-table-tool-bar,
+        .react-bs-table-pagination {
+            display: none;
+        }
+    }
+}
+
+.block-ui {
+    &.blocking-overlay {
+        .block-ui-container {
+            .block-ui-overlay {
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+.tooltip-content {
+    display: inline-block;
+}
+
+.input-copy {
+    display: flex;
+    input {
+        width: calc(100% - 63px) !important;
+        height: 39px;
+        border: 1px solid #aaa2a2;
+    }
+    .tooltip-content a.btn {
+        padding-top: 10px !important;
+        margin-left: -2px;
+    }
+}
+
+.pl-0 {
+    padding-left: 0px !important;
+}
+
+.pr-0 {
+    padding-right: 0px !important;
+}
+
+.p-0 {
+    padding: 0px !important;
+}
+
+.p-10 {
+    padding: 10px !important;
+}
+
+.center {
+    text-align: center !important;
+}
+
+.font-green-jungle {
+    color: #26C281!important
+}
+
+.bg-font-green-jungle {
+    color: #FFF!important
+}
+
+.font-red {
+    color: #e7505a!important
+}
+
+.calculator-widget {
+    background: #f8f8f8;
+    border: 1px solid #e8e9eb;
+    border-radius: 15px !important;
+    padding: 30px;
+}

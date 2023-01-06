@@ -1,0 +1,298 @@
+@import '../variables/variables';
+.bitmoon-page {
+    .homepage {
+        .homepage-slider {
+            .slick-arrow {
+                position: absolute;
+                top: 50%;
+                z-index: 2;
+                &::before {
+                    font-size: 30px;
+                } 
+            }
+            .slick-active img {
+                -webkit-filter: grayscale(0) !important;
+                filter: grayscale(0) !important;
+            }
+            .slick-next {
+                right: 3%;
+            }
+            .slick-prev {
+                left: 3%;
+            }
+            h1 {
+                @media #{$mobile-screen} {
+                    font-size: 24px;
+                }
+                text-align: center;
+                margin: 0 auto;
+                font-weight: bold;
+                color: #fff
+            }
+            background: #fff;
+            
+            .main-image {
+                &:hover {
+                    text-decoration: none
+                }
+                text-decoration: none;
+                position: relative;
+                justify-items: center;
+                -webkit-box-align: center;
+                align-items: center;
+                width: 100%;
+                height: calc(((110vh - 76px) - 20px) - 60px);
+                display: flex !important;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                @media (max-width: 1600px) {
+                    height: calc(((100vh - 76px) - 120px) - 155px);
+                }
+                @media (max-width: 992px) {
+                    height: calc(((100vh - 76px) - 120px) - 550px);
+                }
+                @media (max-width: 600px) {
+                    height: calc(((100vh - 76px) - 120px) - 290px);
+                }
+            }
+            
+            .slick-slide img {
+                border: 5px solid #fff;
+                display: block;
+                margin: auto;
+            }
+            img {
+                max-width: 100%;
+                height: 80px;
+                margin: 0 0 1.45rem;
+                padding: 0;
+            }
+            .slick-dots {
+                @media (min-width: 1600px) {
+                    bottom: 40px;
+                }
+                li {
+                    position: relative;
+                    display: inline-block;
+                    margin: 0 5px;
+                    padding: 0;
+                }
+            }
+            .slick-thumb li {
+                img {
+                    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+                    filter: grayscale(100%);
+                }
+                width: 150px;
+                height: 70px;
+            }   
+        }
+        .page-container {
+            min-height: 420px;
+            .flash-screen {
+                .flash-message {
+                    @media #{$mobile-screen} {
+                        top: 40%;
+                        padding: 0 5px;
+                    }
+                    h1 {
+                        @media #{$mobile-screen} {
+                            white-space: normal;
+                            line-height: 30px;
+                            font-size: 22px;
+                        }
+                    }
+                    h5 {
+                        @media #{$mobile-screen} {
+                            white-space: normal;
+                            line-height: 20px;
+                        }
+                    }
+                    .countdown-calendar {
+                        h3 {
+                            @media #{$mobile-screen} {
+                                white-space: normal;
+                                line-height: 30px;
+                                font-size: 22px;
+                            }
+                        }
+                        a {
+                            @media #{$mobile-screen} {
+                                margin-top: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+            // .slick-dots {
+            //     position: absolute;
+            //     bottom: -25px;
+            //     display: block;
+            //     width: 100%;
+            //     padding: 0;
+            //     margin: 0;
+            //     list-style: none;
+            //     text-align: center;
+            // } 
+          
+        }
+        .sec-about-ucoincash {
+            @media #{$mobile-screen} {
+                padding-bottom: 20px;
+            }
+            h1 {
+                margin-bottom: 30px;
+                @media #{$mobile-screen} {
+                    margin-bottom: 5px;
+                    padding-top: 0;
+                    font-size: 24px;
+                }
+            }
+            p.text-intro {
+                text-align: center;
+                font-size: 20px;
+                font-weight: 500;
+                @media #{$mobile-screen} {
+                    margin: 10px 0 0;
+                    font-size: 14px;
+                }
+            }
+            
+        }
+        .why-ucoincash {
+            h1 {
+                @media #{$mobile-screen} {
+                    font-size: 24px;
+                    margin-bottom: 20px;
+                }
+            }
+            .box-why {
+                @media #{$phablet-screen} {
+                    padding: 20px;
+                }
+                .title-box {
+                    @media #{$mobile-screen} {
+                        height: 120px;
+                    }
+                }
+            }
+        }
+        .about-bitmoon-tab {
+            margin-top: 30px;
+            .tabbable-custom {
+                margin-bottom: 0;
+            }
+            .nav.nav-tabs {
+                li {
+                    &.active {
+                        border-color: $yellow;
+                        a {
+                            color: $yellow;
+                        }
+                    }
+                    a {
+                        font-size: 16px;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        @media #{$mobile-screen} {
+                            font-size: 14px;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                        }
+                    }
+                }
+            }
+            .tab-content {
+                padding: 0;
+                .tab-pane {
+                    .list-title {
+                        font-weight: 700;
+                        font-size: 14px;
+                    }
+                    .mt-element-list {
+                        .mt-list-container {
+                            border: none;
+                            ul {
+                                li {
+                                    .list-item-content {
+                                        padding-left: 40px;
+                                        font-weight: 600;
+                                        font-size: 14px;
+                                        @media #{$mobile-screen} {
+                                            padding-right: 0;
+                                            font-size: 13px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .mt-element-step {
+                        .step-line {
+                            .mt-step-col {
+                                &.first {
+                                    .mt-step-number {
+                                        color: $blue !important;
+                                        border-color: $blue !important;
+                                    }
+                                    .mt-step-title {
+                                        &:before, &:after {
+                                            background-color: $blue !important;
+                                        }
+                                    }
+                                }
+                                &.last {
+                                    .mt-step-number {
+                                        color: $green !important;
+                                        border-color: $green !important;
+                                    }
+                                    .mt-step-title {
+                                        &:before, &:after {
+                                            background-color: $green !important;
+                                        }
+                                    }
+                                }
+                                .mt-step-title {
+                                    font-size: 16px;
+                                    padding-top: 15px;
+                                    padding-bottom: 10px;
+                                    color: $dark-gray !important;
+                                    &.first-title {
+                                        &:before, &:after {
+                                            background-color: $yellow;
+                                        }
+                                    }
+                                }
+                                .mt-step-content {
+                                    font-size: 16px;
+                                    color: $dark-gray !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 992px)
+{
+    .bitmoon-page {
+        .homepage {
+            .page-container {
+                min-height: 40px;
+            }
+        }
+    }
+}
+
+.right {
+    float: right !important;
+}
+
+.left {
+    float: left !important;
+}

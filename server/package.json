@@ -1,0 +1,13 @@
+{
+  "name": "bitmoon_application_server",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "morgan": "~1.8.1"
+  }
+}

@@ -1,0 +1,206 @@
+@import '../variables/variables';
+.referral {
+    &.widget {
+        iframe{
+            overflow:hidden;
+        }
+        #EC54VAh-1530967207321 {
+            display: none;
+        }
+    }
+    @media #{$small-widget-size} {
+        padding: 0;
+    }
+    .list-group {
+        .list-group-item {
+            padding-top: 10px;
+            .label {
+                float: right;
+                padding: 5px 15px;
+                margin: 0;
+                font-size: 14px;
+                text-transform: inherit;
+            }
+        }
+    }
+    .affiliate {
+        margin-top: 20px;
+        .affiliate-script-content {
+            .row {
+                margin-top: 30px;
+                @media #{$small-widget-size} {
+                    margin: 0;
+                    padding-top: 25px;
+                    padding-bottom: 25px;
+                    border-bottom: 1px solid $silver;
+                }
+                .banner-title {
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                    @media #{$small-widget-size} {
+                        margin-top: 10px;
+                    }
+                }
+                textarea {
+                    resize: none;
+                }
+            }
+        }
+    }
+    .price-table-design, .mini-price-table-design {
+        max-height: 95px;
+        border: 1px solid #c2cad8;
+    }
+}
+.price-table {
+    &.widget {
+        .react-bs-table-container {
+            .react-bs-table-tool-bar {
+                .col-md-6.col-lg-8 {
+                    display: none;
+                }
+                .col-lg-4 {
+                    width: 100%;
+                    .react-bs-table-search-form {
+                        .form-control {
+                            height: 30px;
+                            font-size: 12px;
+                        }
+                        .input-group-btn {
+                            .btn {
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+            }
+            table {
+                thead {
+                    tr {
+                        th {
+                            @media #{$small-widget-size} {
+                                width: 30% !important;
+                                font-size: 12px !important;
+                                text-align: center !important;
+                            }
+                            &.ask-price-col-header {
+                                display: none;
+                            }
+                            &.change24-col-header {
+                                display: table-cell !important;
+                            }
+                            &.action-button-col-header {
+                                @media #{$small-widget-size} {
+                                    display: none !important;
+                                }
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            @media #{$small-widget-size} {
+                                width: 30%;
+                            }
+                            &.change24-col {
+                                display: table-cell !important;
+                            }
+                            &.ask-price-col {
+                                display: none
+                            }
+                            &.action-button-col {
+                                @media #{$small-widget-size} {
+                                    display: none !important;
+                                }
+                            }
+                            &.coin-name-col {
+                                .btn {
+                                    @media #{$large-widget-size} {
+                                        padding: 2px;
+                                    }
+                                }
+                                .label {
+                                    @media #{$small-widget-size} {
+                                        padding: 2px 0;
+                                    }
+                                    .coin-name {
+                                        display: none;
+                                    }
+                                    .coin-code {
+                                        @media #{$small-widget-size} {
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                            &.action-button-col {
+                                .btn {
+                                    @media #{$large-widget-size} {
+                                        padding: 5px;
+                                    }
+                                }
+                            }
+                            &.bid-price-col {
+                                @media #{$large-widget-size} {
+                                    width: auto !important;
+                                    padding-left: initial !important;
+                                }
+                                .price-text {
+                                    @media #{$small-widget-size} {
+                                        font-size: 12px;
+                                        font-weight: 600;
+                                        line-height: 35.5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .react-bs-table-pagination {
+                @media #{$small-widget-size} {
+                    .col-xs-6 {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .mini-price-table {
+            border: none;
+            font-weight: 600;
+            .rt-table {
+                .rt-thead.-header {
+                    display: none;
+                }
+                .rt-thead.-filters {
+                    .rt-th {
+                        .input-icon>input.form-control {
+                            padding-left: 33px;
+                        }
+                    }
+                }
+                .rt-tr {
+                    cursor: pointer;
+                }
+                .rt-td {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    span {
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: block;
+                    }
+                    .price-text  {
+                        margin-top: 5px;
+                        display: inline-block;
+                        i {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

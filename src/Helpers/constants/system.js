@@ -1,0 +1,138 @@
+/* eslint-disable import/prefer-default-export */
+
+export const CHECK_IS_MOBILE = () => {
+  if (window.innerWidth <= 812) {
+    return true;
+  }
+  return false;
+};
+
+export const SCREEN_MOBILE = () => {
+  return window.innerWidth <= 480;
+};
+
+export const SCREEN_TABLET = () => {
+  return window.innerWidth > 480 && window.innerWidth <= 768;
+};
+
+
+export const ERRORS = {
+  NO_WALLET: 'NO_WALLET',
+  INVALID_TOKEN: 'INVALID_TOKEN',
+  INVALID_WALLET: 'INVALID_WALLET',
+  BALANCE_NOT_ENOUGH: 'BALANCE_NOT_ENOUGH',
+  WRONG_GOOGLE_AUTH: 'WRONG_GOOGLE_AUTH',
+  USER_BLOCKED: 'USER_BLOCKED',
+  OVER_DAILY_WITHDRAW_LIMITATION: 'OVER_DAILY_WITHDRAW_LIMITATION',
+  CAN_NOT_ADD_DEPOSIT_RECORD: 'CAN_NOT_ADD_DEPOSIT_RECORD',
+  SOMETHING_HAPPENED: 'SOMETHING_HAPPENED',
+  DATA_IS_NOT_VALID: 'DATA_IS_NOT_VALID',
+  DENIED_WITHDRAW: 'DENIED_WITHDRAW',
+  USER: {
+    EMAIL_IS_TAKEN: 'EMAIL_IS_TAKEN',
+    INVALID_CREDENTIALS: 'INVALID_CREDENTIALS',
+    DUPLICATE_PHONE_NUMBER: 'DUPLICATE_PHONE_NUMBER',
+    DUPLICATE_SSN: 'DUPLICATE_SSN',
+  },
+  SIMPLE_EXCHANGE: {
+    MAX_AMOUNT_REACHED: 'MAX_AMOUNT_REACHED',
+  },
+};
+
+export const GLOBAL_VARIABLES = {
+  REGISTER_POLICY_COUNTDOWN_TIME: 30, //sec
+  GET_ORDER_BOOK_INTERVAL_TIME: 120000, //mili sec
+  GET_COIN_INFO_INTERVAL_TIME: 3000, //mili sec
+  EXCHANGE_OPTION_COUNTDOWN_TIME: 120, //sec
+  BASE_CURRENCY: 'VND',
+  BANK_REQUIRE_ACCOUNT_NAME_AND_NUMBER: 'vcb',
+  WALLET_TYPE: {
+    DEPOSIT: 'deposit',
+    WITHDRAWAL: 'withdraw',
+    OUTCOME: 'OUTCOME',
+  },
+  REMEMBER_DEVICE_COOKIE_MAX_AGE: 2592000, //sec
+  REF_ID_COOKIE_MAX_AGE: 7200, //sec
+};
+
+export const ACCOUNT_STATUS = {
+  isIdVerified: 1,
+  isProfileUpdated: 0,
+};
+
+export const EXCHANGE_ORDER_STATUS = {
+  ACTIVE: 'ACTIVE',
+  OPEN: 'OPEN',
+  PROCESSING: 'PROCESSING',
+  CANCELED: 'CANCELED',
+  PARTIAL: 'PARTIAL',
+  CANCELING: 'CANCELING',
+  CANCEL_REQUESTED: 'CANCEL_REQUESTED',
+  DONE: 'DONE',
+  CLOSED: 'CLOSED',
+};
+
+export const USER_DEPOSIT_REQUEST_STATUS = {
+  COMPLETED: 'COMPLETED',
+};
+
+export const EXCHANGE_ORDER_TYPE = {
+  BUY: 'BUY',
+  SELL: 'SELL',
+};
+
+export const TOAST_TYPE = {
+  SUCCESS: 'success',
+  ERROR: 'error',
+  WARNING: 'warning',
+};
+
+export const WALLET_ORDER_STATUS = {
+  NEW: 0,
+  SUCCESS: 1,
+  PROCESSING: 2,
+  VALIDATED: 3,
+  REQUEST_TO_CANCEL: -3,
+  FEEDBACK: 4,
+  RESERVE: 5,
+  TFAIL: -2,
+  FAIL: -1,
+};
+
+export const USER_GROUP_TYPE = {
+  TRADE_FEE: 'TRADE_FEE',
+  DAILY_TRANSFER_LIMITATION: 'DAILY_TRANSFER_LIMITATION',
+  VERIFICATION: 'VERIFICATION',
+  MARKETING: 'MARKETING',
+  MARKETING_COMMISSION: 'MARKETING_COMMISSION',
+};
+
+export const CUSTOMER_SERVICE_TYPE = {
+  PHONE: 'PHONE',
+  FACEBOOK: 'FACEBOOK',
+  TELEGRAM: 'TELEGRAM',
+};
+
+export const WITHDRAW_CASH_FORM_ACCOUNT_TYPE = {
+  NEW: 'NEW',
+  SAVED: 'SAVED',
+};
+
+export const BANK_MANAGEMENT = 'BANK_MANAGEMENT';
+
+export const BANK_MANAGEMENT_TYPE = {
+  NEW: 'NEW',
+  EDIT: 'EDIT',
+  DELETE: 'DELETE',
+};
+
+
+export const IMAGE_URL = {
+  USDTTRC20: '/assets/global/img/coin-logo/tron.png',
+  USDTERC20: '/assets/global/img/coin-logo/ethereum-dark.png'
+}
+
+export const WALLET_NAME_MAPPING = {
+  USDTTRC20: 'TRC20',
+  USDTERC20: 'ERC20'
+}

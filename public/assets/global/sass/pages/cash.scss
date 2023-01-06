@@ -1,0 +1,350 @@
+@import '../variables/variables';
+.cash {
+    .portlet-body {
+        .title {
+            font-size: 16px;
+        }
+        .wallet-description {
+            margin-top: 0;
+            color: $dark-yellow;
+            font-weight: 600;
+            background-color: $light-gray;
+        }
+        .account-choosen {
+            margin-right: 30px;
+            margin-top: 10px;
+            display: inline-block;
+            input {
+                margin-right: 5px;
+            }
+        }
+
+        ul.cash-tab {
+            @media #{$mobile-screen} {
+                margin-bottom: 0;   
+            }
+            li {
+                text-transform: uppercase;
+                font-weight: bold;
+                &.empty-li {
+                    height: 375px;
+                }
+                &:hover {
+                    a {
+                        &.tab-deposit-link {
+                            color: $blue;
+                        }
+                        &.tab-withdrawal-link {
+                            color: $red;
+                        }
+                    }
+                }
+                a {
+                    padding: 20px 10px;
+                    &.tab-deposit-link {
+                        color: $blue;
+                    }
+                    &.tab-withdrawal-link {
+                        color: $red;
+                    }
+                }
+                &.active{
+                    a {
+                        background: #c6c6c687;
+                    }
+                }
+            }
+        }
+
+        .panel {
+            padding: 0;
+            border: none;
+            box-shadow: none;
+            .panel-body {
+                padding: 0;
+                .cash-transfer-info {
+                    .title {
+                        font-weight: 600;
+                        width: 70%;
+                        margin: 20px auto;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+        .footer {
+            button {
+                margin: 0 auto;
+                display: block;
+                width: 40%;
+                @media #{$mobile-screen} {
+                    width: 100%;
+                }
+            }
+        }
+        @media #{$mobile-screen} {
+            .wallet-description {
+                padding: 0;
+                background: transparent;
+            }
+
+            .content-collapse {
+                .btn {
+                    width: 100%;
+                    display: block;
+                    font-size: 11px;
+                    padding: 8px 5px;
+                    font-weight: bold;
+                    white-space: normal;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    @media #{$mobile-screen} {
+        &.portlet.light {
+            padding: 0;
+            box-shadow: none;
+            border: none !important;
+
+            .portlet-body {
+                padding-top: 20px;
+            }
+
+            .cash-tab {
+                border: none;
+                display: flex;
+                margin-bottom: -1px;
+
+                li {
+                    flex: 1;
+                    z-index: 2;
+                    float: none;
+
+                    a {
+                        height: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        padding: 10px 5px;
+                        text-align: center;
+                        align-items: center;
+                        justify-content: center;
+
+                        & > span {
+                            width: 100%;
+                            display: block;
+                            font-size: 12px;
+                        }
+                    }
+
+                    &.active {
+                        a.tab-withdrawal-link {
+                            border-color: $red;
+                            border-bottom-color: #fff;
+                        }
+
+                        a.tab-deposit-link {
+                            border-color: $blue;
+                            border-bottom-color: #fff;
+                        }
+
+                        a.tab-bank-link {
+                            border-color: $dark-yellow;
+                            border-bottom-color: #fff;
+                            color: #c27d0e;
+                            margin-right: 0px;
+                        }
+                    }
+                }
+            }
+
+            .footer {
+                margin-top: -15px;
+                margin-bottom: -10px;
+            }
+
+            .add-account-button {
+                margin: 0;
+            }
+        }
+
+        .tab-pane {
+            z-index: 1;
+            padding: 10px;
+
+            &.active {
+                &#tab_deposit {
+                    border: 1px solid $blue;
+                }
+                &#tab_withdrawal {
+                    border: 1px solid $red;
+                }
+                &#tab_bank {
+                    border: 1px solid $dark-yellow;
+                }
+            }
+        }
+    }
+}
+
+.transaction-table {
+    .react-bs-table-tool-bar {
+        .col-lg-8 {
+            @media #{$mobile-screen} {
+                width: 100%;
+            }
+        }
+        .col-lg-4 {
+            @media #{$mobile-screen} {
+                display: none;
+            }
+        }
+    }
+    table.table {
+        thead {
+            tr {
+                th {
+                    @media #{$mobile-screen} {
+                        font-size: 11px;
+                        text-align: left !important;
+                    }
+                    &.amount-col-header {
+                        @media #{$tablet-screen} {
+                            display: table-cell !important;
+                        }
+                        @media #{$desktop-screen} {
+                            display: table-cell !important;
+                            width: 200px;
+                        }
+                    }
+                    &.coin-col-header {
+                        @media #{$desktop-screen} {
+                            width: 200px;
+                        }
+                    }
+                    &.status-col-header {
+                        @media #{$desktop-screen} {
+                            width: 250px;
+                        }
+                    }
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    white-space: initial;
+                    @media #{$mobile-screen} {
+                        font-size: 11px;
+                        vertical-align: top;
+                    }
+                    &.status-col {
+                        @media #{$desktop-screen} {
+                            width: 250px;
+                        }
+                    }
+                    &.coin-col {
+                        @media #{$desktop-screen} {
+                            width: 200px;
+                        }
+                    }
+                    &.amount-col {
+                        @media #{$tablet-screen} {
+                            display: table-cell !important;
+                        }
+                        @media #{$desktop-screen} {
+                            display: table-cell !important;
+                            width: 200px;
+                        }
+                    }
+                    .label.exchange-type {
+                        @media #{$mobile-screen} {
+                            width: 100%;
+                            font-size: 10px;
+                        }
+                    }
+                    .date-time {
+                        @media #{$mobile-screen} {
+                            font-size: 11px;
+                        }
+                    }
+                    .coin-title {
+                        @media #{$mobile-screen} {
+                            text-align: left;
+                        }
+                        p {
+                            @media #{$mobile-screen} {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                    .transaction-info {
+                        div {
+                            margin-bottom: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .react-bs-table-pagination {
+        .col-lg-6 {
+            .dropdown-toggle {
+                margin-bottom: 10px;
+            }
+            @media #{$mobile-screen} {
+                width: 100% !important;
+                text-align: right;
+            }
+        }
+    }
+}
+
+.user-bank-management {
+    .title {
+        color: #c27d0e;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin: 20px 20px 20px 0;
+        font-weight: 700;
+        float: left;
+        display: inline-block;
+    }
+    .add-account-button {
+        margin: 20px 0;
+        float: right;
+        display: inline-block;
+    }
+    .update-account-button {
+        border-color: #f8b13d;
+        color: #f8b13d;
+        background: 0 0;
+        padding: 8px 14px 7px;
+        margin: 0 5px;
+        border-radius: 25px !important;
+        box-shadow: none !important;
+        font-weight: 600;
+        &:hover {
+            background-color: #f8b13d;
+            color: #fff;
+        }
+    }
+    .delete-account-button {
+        border-color: #ed6b75;
+        color: #ed6b75;
+        background: 0 0;
+        padding: 8px 14px 7px;
+        margin: 0 5px;
+        border-radius: 25px !important;
+        box-shadow: none !important;
+        font-weight: 600;
+        &:hover {
+            background-color: #ed6b75;
+            color: #fff;
+        }
+    }
+}
+
+#tab-launch {
+    min-height: 300px;
+}

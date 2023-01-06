@@ -1,0 +1,242 @@
+/* Variables */
+.cash .portlet-body .title {
+  font-size: 16px; }
+
+.cash .portlet-body .wallet-description {
+  margin-top: 0;
+  color: #c27d0e;
+  font-weight: 600;
+  background-color: #f1f4f7; }
+
+.cash .portlet-body .account-choosen {
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block; }
+  .cash .portlet-body .account-choosen input {
+    margin-right: 5px; }
+
+@media (max-width: 812px) {
+  .cash .portlet-body ul.cash-tab {
+    margin-bottom: 0; } }
+
+.cash .portlet-body ul.cash-tab li {
+  text-transform: uppercase;
+  font-weight: bold; }
+  .cash .portlet-body ul.cash-tab li.empty-li {
+    height: 375px; }
+  .cash .portlet-body ul.cash-tab li:hover a.tab-deposit-link {
+    color: #3598dc; }
+  .cash .portlet-body ul.cash-tab li:hover a.tab-withdrawal-link {
+    color: #e7505a; }
+  .cash .portlet-body ul.cash-tab li a {
+    padding: 20px 10px; }
+    .cash .portlet-body ul.cash-tab li a.tab-deposit-link {
+      color: #3598dc; }
+    .cash .portlet-body ul.cash-tab li a.tab-withdrawal-link {
+      color: #e7505a; }
+  .cash .portlet-body ul.cash-tab li.active a {
+    background: #c6c6c687; }
+
+.cash .portlet-body .panel {
+  padding: 0;
+  border: none;
+  box-shadow: none; }
+  .cash .portlet-body .panel .panel-body {
+    padding: 0; }
+    .cash .portlet-body .panel .panel-body .cash-transfer-info .title {
+      font-weight: 600;
+      width: 70%;
+      margin: 20px auto;
+      line-height: 20px; }
+
+.cash .portlet-body .footer button {
+  margin: 0 auto;
+  display: block;
+  width: 40%; }
+  @media (max-width: 812px) {
+    .cash .portlet-body .footer button {
+      width: 100%; } }
+
+@media (max-width: 812px) {
+  .cash .portlet-body .wallet-description {
+    padding: 0;
+    background: transparent; }
+  .cash .portlet-body .content-collapse .btn {
+    width: 100%;
+    display: block;
+    font-size: 11px;
+    padding: 8px 5px;
+    font-weight: bold;
+    white-space: normal;
+    text-transform: uppercase; } }
+
+@media (max-width: 812px) {
+  .cash.portlet.light {
+    padding: 0;
+    box-shadow: none;
+    border: none !important; }
+    .cash.portlet.light .portlet-body {
+      padding-top: 20px; }
+    .cash.portlet.light .cash-tab {
+      border: none;
+      display: flex;
+      margin-bottom: -1px; }
+      .cash.portlet.light .cash-tab li {
+        flex: 1;
+        z-index: 2;
+        float: none; }
+        .cash.portlet.light .cash-tab li a {
+          height: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          padding: 10px 5px;
+          text-align: center;
+          align-items: center;
+          justify-content: center; }
+          .cash.portlet.light .cash-tab li a > span {
+            width: 100%;
+            display: block;
+            font-size: 12px; }
+        .cash.portlet.light .cash-tab li.active a.tab-withdrawal-link {
+          border-color: #e7505a;
+          border-bottom-color: #fff; }
+        .cash.portlet.light .cash-tab li.active a.tab-deposit-link {
+          border-color: #3598dc;
+          border-bottom-color: #fff; }
+        .cash.portlet.light .cash-tab li.active a.tab-bank-link {
+          border-color: #c27d0e;
+          border-bottom-color: #fff;
+          color: #c27d0e;
+          margin-right: 0px; }
+    .cash.portlet.light .footer {
+      margin-top: -15px;
+      margin-bottom: -10px; }
+    .cash.portlet.light .add-account-button {
+      margin: 0; }
+  .cash .tab-pane {
+    z-index: 1;
+    padding: 10px; }
+    .cash .tab-pane.active#tab_deposit {
+      border: 1px solid #3598dc; }
+    .cash .tab-pane.active#tab_withdrawal {
+      border: 1px solid #e7505a; }
+    .cash .tab-pane.active#tab_bank {
+      border: 1px solid #c27d0e; } }
+
+@media (max-width: 812px) {
+  .transaction-table .react-bs-table-tool-bar .col-lg-8 {
+    width: 100%; } }
+
+@media (max-width: 812px) {
+  .transaction-table .react-bs-table-tool-bar .col-lg-4 {
+    display: none; } }
+
+@media (max-width: 812px) {
+  .transaction-table table.table thead tr th {
+    font-size: 11px;
+    text-align: left !important; } }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .transaction-table table.table thead tr th.amount-col-header {
+    display: table-cell !important; } }
+
+@media (min-width: 1025px) {
+  .transaction-table table.table thead tr th.amount-col-header {
+    display: table-cell !important;
+    width: 200px; } }
+
+@media (min-width: 1025px) {
+  .transaction-table table.table thead tr th.coin-col-header {
+    width: 200px; } }
+
+@media (min-width: 1025px) {
+  .transaction-table table.table thead tr th.status-col-header {
+    width: 250px; } }
+
+.transaction-table table.table tbody tr td {
+  white-space: initial; }
+  @media (max-width: 812px) {
+    .transaction-table table.table tbody tr td {
+      font-size: 11px;
+      vertical-align: top; } }
+  @media (min-width: 1025px) {
+    .transaction-table table.table tbody tr td.status-col {
+      width: 250px; } }
+  @media (min-width: 1025px) {
+    .transaction-table table.table tbody tr td.coin-col {
+      width: 200px; } }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .transaction-table table.table tbody tr td.amount-col {
+      display: table-cell !important; } }
+  @media (min-width: 1025px) {
+    .transaction-table table.table tbody tr td.amount-col {
+      display: table-cell !important;
+      width: 200px; } }
+  @media (max-width: 812px) {
+    .transaction-table table.table tbody tr td .label.exchange-type {
+      width: 100%;
+      font-size: 10px; } }
+  @media (max-width: 812px) {
+    .transaction-table table.table tbody tr td .date-time {
+      font-size: 11px; } }
+  @media (max-width: 812px) {
+    .transaction-table table.table tbody tr td .coin-title {
+      text-align: left; } }
+  @media (max-width: 812px) {
+    .transaction-table table.table tbody tr td .coin-title p {
+      margin-bottom: 0; } }
+  .transaction-table table.table tbody tr td .transaction-info div {
+    margin-bottom: 8px; }
+
+.transaction-table .react-bs-table-pagination .col-lg-6 .dropdown-toggle {
+  margin-bottom: 10px; }
+
+@media (max-width: 812px) {
+  .transaction-table .react-bs-table-pagination .col-lg-6 {
+    width: 100% !important;
+    text-align: right; } }
+
+.user-bank-management .title {
+  color: #c27d0e;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 20px 20px 0;
+  font-weight: 700;
+  float: left;
+  display: inline-block; }
+
+.user-bank-management .add-account-button {
+  margin: 20px 0;
+  float: right;
+  display: inline-block; }
+
+.user-bank-management .update-account-button {
+  border-color: #f8b13d;
+  color: #f8b13d;
+  background: 0 0;
+  padding: 8px 14px 7px;
+  margin: 0 5px;
+  border-radius: 25px !important;
+  box-shadow: none !important;
+  font-weight: 600; }
+  .user-bank-management .update-account-button:hover {
+    background-color: #f8b13d;
+    color: #fff; }
+
+.user-bank-management .delete-account-button {
+  border-color: #ed6b75;
+  color: #ed6b75;
+  background: 0 0;
+  padding: 8px 14px 7px;
+  margin: 0 5px;
+  border-radius: 25px !important;
+  box-shadow: none !important;
+  font-weight: 600; }
+  .user-bank-management .delete-account-button:hover {
+    background-color: #ed6b75;
+    color: #fff; }
+
+#tab-launch {
+  min-height: 300px; }
+
+/*# sourceMappingURL=cash.css.map */

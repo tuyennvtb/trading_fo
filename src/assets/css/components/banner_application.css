@@ -1,0 +1,35 @@
+.banner-application {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.banner-application .banner-item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.banner-application .banner-item a {
+    cursor: pointer;
+}
+
+.banner-application .banner-item a.logo-app img {
+    max-height: 100px;
+}
+
+.banner-application img.banner-qr {
+    max-height: 100px;
+    margin-left: 20px
+}
+
+@media (max-width: 500px) {
+    .banner-application .banner-item a.logo-app img {
+        max-height: 1000px;
+        margin-left: 0px;
+        width: 65%;
+    }
+    .banner-application img.banner-qr {
+        max-height: 1000px;
+        margin-left: 3%;
+        width: 30%;
+    }
+}

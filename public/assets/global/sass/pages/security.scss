@@ -1,0 +1,34 @@
+@import '../variables/variables';
+.security-page {
+    .portlet {
+        .alert {
+            .btn {
+                @media #{$mobile-screen} {
+                    width: 100%;
+                    height: auto;
+                    span {
+                        white-space: normal;
+                    }
+                }
+            }
+        }
+        .portlet-body {
+            .container {
+                @media #{$mobile-screen} {
+                    padding: 0;
+                    width: 100%;
+                }
+                .guide {
+                    .btn {
+                        @media #{$mobile-screen} {
+                            width: 100%;
+                            height: auto;
+                            white-space: normal;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

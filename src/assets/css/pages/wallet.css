@@ -1,0 +1,323 @@
+/* Variables */
+
+@media (max-width: 812px) {
+    .wallet .react-bs-table-container .react-bs-table-tool-bar .col-lg-8 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 812px) {
+    .wallet .react-bs-table-container .react-bs-table-tool-bar .col-lg-4 {
+        display: none;
+    }
+}
+
+@media (max-width: 812px) {
+    .wallet .react-bs-table-container .react-bs-table table thead tr th {
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .wallet .react-bs-table-container .react-bs-table table thead tr th.id-col-header {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1025px) {
+    .wallet .react-bs-table-container .react-bs-table table thead tr th.id-col-header {
+        display: table-cell !important;
+    }
+}
+
+@media (min-width: 1025px) {
+    .wallet .react-bs-table-container .react-bs-table table thead tr th.coin-name-col-header {
+        width: 150px;
+    }
+}
+
+@media (max-width: 812px) {
+    .wallet .react-bs-table-container .react-bs-table table thead tr th.coin-name-col-header {
+        width: 22%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .wallet .react-bs-table-container .react-bs-table table thead tr th.receive-holding-balance-col-header {
+        display: table-cell !important;
+    }
+}
+
+@media (min-width: 1025px) {
+    .wallet .react-bs-table-container .react-bs-table table thead tr th.receive-holding-balance-col-header {
+        display: table-cell !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .wallet .react-bs-table-container .react-bs-table table thead tr th.current-balance-col-header {
+        display: table-cell !important;
+    }
+}
+
+@media (min-width: 1025px) {
+    .wallet .react-bs-table-container .react-bs-table table thead tr th.current-balance-col-header {
+        display: table-cell !important;
+    }
+}
+
+@media (max-width: 812px) {
+    .wallet .react-bs-table-container .react-bs-table table thead tr th.send-holding-balance-col-header span {
+        display: none;
+    }
+}
+
+@media (max-width: 812px) {
+    .wallet .react-bs-table-container .react-bs-table table thead tr th.withdraw-link-col-header {
+        display: none;
+    }
+}
+
+@media (max-width: 812px) {
+    .wallet .react-bs-table-container .react-bs-table table tbody tr td {
+        font-size: 11px;
+        vertical-align: top;
+        text-align: left !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .wallet .react-bs-table-container .react-bs-table table tbody tr td.id-col {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1025px) {
+    .wallet .react-bs-table-container .react-bs-table table tbody tr td.id-col {
+        display: table-cell !important;
+    }
+}
+
+@media (min-width: 1025px) {
+    .wallet .react-bs-table-container .react-bs-table table tbody tr td.coin-name-col {
+        width: 150px;
+    }
+}
+
+@media (max-width: 812px) {
+    .wallet .react-bs-table-container .react-bs-table table tbody tr td.coin-name-col {
+        width: 20%;
+    }
+}
+
+.wallet .react-bs-table-container .react-bs-table table tbody tr td.coin-name-col .coin-logo {
+    width: 20px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .wallet .react-bs-table-container .react-bs-table table tbody tr td.receive-holding-balance-col {
+        display: table-cell !important;
+    }
+}
+
+@media (min-width: 1025px) {
+    .wallet .react-bs-table-container .react-bs-table table tbody tr td.receive-holding-balance-col {
+        display: table-cell !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .wallet .react-bs-table-container .react-bs-table table tbody tr td.current-balance-col {
+        display: table-cell !important;
+    }
+}
+
+@media (min-width: 1025px) {
+    .wallet .react-bs-table-container .react-bs-table table tbody tr td.current-balance-col {
+        display: table-cell !important;
+    }
+}
+
+@media (max-width: 812px) {
+    .wallet .react-bs-table-container .react-bs-table table tbody tr td.send-holding-balance-col {
+        width: 50%;
+    }
+}
+
+@media (max-width: 812px) {
+    .wallet .react-bs-table-container .react-bs-table table tbody tr td.withdraw-link-col,
+    .wallet .react-bs-table-container .react-bs-table table tbody tr td.deposit-link-col {
+        width: 35%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+@media (max-width: 812px) {
+    .wallet .react-bs-table-container .react-bs-table table tbody tr td.withdraw-link-col button,
+    .wallet .react-bs-table-container .react-bs-table table tbody tr td.withdraw-link-col a,
+    .wallet .react-bs-table-container .react-bs-table table tbody tr td.deposit-link-col button,
+    .wallet .react-bs-table-container .react-bs-table table tbody tr td.deposit-link-col a {
+        padding: 5px 2px;
+        font-size: 10px;
+        min-width: inherit;
+        height: auto;
+        width: 100%;
+        max-width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .wallet .react-bs-table-container .react-bs-table table tbody tr td.withdraw-link-col button,
+    .wallet .react-bs-table-container .react-bs-table table tbody tr td.withdraw-link-col a,
+    .wallet .react-bs-table-container .react-bs-table table tbody tr td.deposit-link-col button,
+    .wallet .react-bs-table-container .react-bs-table table tbody tr td.deposit-link-col a {
+        padding: 5px;
+        font-size: 10px;
+        min-width: inherit;
+        height: auto;
+        width: 100%;
+        max-width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@media (max-width: 812px) {
+    .wallet .react-bs-table-container .react-bs-table table tbody tr td.withdraw-link-col button i,
+    .wallet .react-bs-table-container .react-bs-table table tbody tr td.withdraw-link-col a i,
+    .wallet .react-bs-table-container .react-bs-table table tbody tr td.deposit-link-col button i,
+    .wallet .react-bs-table-container .react-bs-table table tbody tr td.deposit-link-col a i {
+        display: none;
+    }
+}
+
+@media (max-width: 812px) {
+    .wallet .react-bs-table-container .react-bs-table table tbody tr td.withdraw-link-col {
+        display: none;
+    }
+}
+
+@media (max-width: 812px) {
+    .wallet .react-bs-table-container .react-bs-table table tbody tr td .combined-block p {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 812px) {
+    .wallet .react-bs-table-container .react-bs-table table tbody tr td .combined-block p.title {
+        margin-top: 10px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 812px) {
+    .wallet .react-bs-table-container .react-bs-table table tbody tr td .combined-block p.title:first-child {
+        margin-top: 0;
+    }
+}
+
+.wallet .react-bs-table-container .react-bs-table table tbody tr td .wallet-button {
+    min-width: 120px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.wallet .react-bs-table-container .react-bs-table-pagination .col-lg-6 .dropdown-toggle {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 812px) {
+    .wallet .react-bs-table-container .react-bs-table-pagination .col-lg-6 {
+        width: 100% !important;
+        text-align: right;
+    }
+}
+
+.wallet-popup {
+    top: 13%;
+}
+
+.panel-heading.coin-deposit-header {
+    margin-bottom: 20px;
+}
+
+.form-group.form-md-line-input.bitmoon-input .form-control {
+    cursor: text;
+}
+
+.line-break {
+    word-wrap: break-word;
+}
+
+.modal-dialog.sending-dialog .panel-body button.btn-wallet {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.modal-dialog.sending-dialog .panel-body button.btn-wallet-confirm {
+    margin-left: 10px;
+}
+
+.modal-dialog.deposit-dialog {
+    margin-top: 0;
+    margin-bottom: 0;
+    overflow-x: hidden;
+}
+
+.modal-dialog.deposit-dialog .modal-content {
+    border: none;
+}
+
+.modal-dialog .value--address input {
+    width: 100%;
+    padding: 9px 8px;
+    border: 1px solid #c27d0e;
+    font-size: 13px;
+}
+
+.modal-dialog .value--tag input {
+    width: 100%;
+    padding: 9px 8px;
+    border: 1px solid #c27d0e;
+    font-size: 13px;
+}
+
+.modal-dialog .address-coin {
+    word-break: break-all;
+}
+
+@media (max-width: 812px) {
+    body.ReactModal__Body--open {
+        overflow: hidden;
+    }
+    body.ReactModal__Body--open .ReactModal__Content {
+        max-height: 435px;
+        top: 50% !important;
+    }
+    body.ReactModal__Body--open .value--address,
+    body.ReactModal__Body--open .value--tag {
+        display: -ms-flex;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        overflow: initial;
+        overflow: unset;
+    }
+    body.ReactModal__Body--open .value--QR {
+        text-align: center;
+    }
+    body.ReactModal__Body--open .btn-close--popup {
+        width: 100%;
+    }
+}
+
+
+/*# sourceMappingURL=wallet.css.map */

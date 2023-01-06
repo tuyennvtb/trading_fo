@@ -1,0 +1,166 @@
+/* Variables */
+.verify-account-form .verification-step .mt-step-desc .verified-label {
+  width: 125px;
+  padding: 2px;
+  margin: 10px auto 0;
+  background-color: #c27d0e;
+  color: white; }
+  .verify-account-form .verification-step .mt-step-desc .verified-label.alert-success {
+    background-color: #26C281; }
+
+.verify-account-form .verification-step .mt-step-col.active .mt-step-title {
+  color: #26C281 !important; }
+  .verify-account-form .verification-step .mt-step-col.active .mt-step-title:before, .verify-account-form .verification-step .mt-step-col.active .mt-step-title:after {
+    background-color: #26C281; }
+
+.verify-account-form .verification-step .mt-step-col.active .mt-step-content {
+  color: #26C281 !important; }
+
+.verify-account-form .verification-step .mt-step-col.active .mt-step-number {
+  background-color: #26C281 !important;
+  color: white !important;
+  border-color: #26C281 !important; }
+
+.verify-account-form .verification-info {
+  width: 50%;
+  margin: 10px auto 40px; }
+  @media (max-width: 812px) {
+    .verify-account-form .verification-info {
+      width: 100%; } }
+  .verify-account-form .verification-info .title {
+    font-weight: bold;
+    color: #c27d0e; }
+  .verify-account-form .verification-info .content {
+    margin-top: 20px; }
+
+.verify-account-form .upload-section {
+  transition: all 0.5s ease;
+  opacity: 0;
+  height: 0;
+  max-height: 0;
+  min-height: 0;
+  overflow: hidden; }
+  @media (min-width: 1025px) {
+    .verify-account-form .upload-section {
+      padding: 0 90px; } }
+  @media (max-width: 812px) {
+    .verify-account-form .upload-section {
+      display: none;
+      opacity: 1;
+      max-height: initial;
+      min-height: initial;
+      overflow: auto; } }
+  .verify-account-form .upload-section.active {
+    opacity: 1;
+    height: auto;
+    transition: all 0.5s ease;
+    max-height: 450px;
+    min-height: 450px; }
+    @media (max-width: 812px) {
+      .verify-account-form .upload-section.active {
+        display: block;
+        max-height: initial;
+        min-height: initial; } }
+  @media (max-width: 812px) {
+    .verify-account-form .upload-section .img-responsive {
+      margin: 0 auto; } }
+  .verify-account-form .upload-section .form-group .panel .panel-heading .panel-title {
+    font-weight: 600; }
+  .verify-account-form .upload-section .form-group .panel .panel-body {
+    padding: 0; }
+    .verify-account-form .upload-section .form-group .panel .panel-body .input-group .mt-element-overlay .mt-overlay-6 {
+      background: #f1f4f7; }
+      .verify-account-form .upload-section .form-group .panel .panel-body .input-group .mt-element-overlay .mt-overlay-6 img.bitmoon-image {
+        height: 257px;
+        visibility: hidden; }
+      .verify-account-form .upload-section .form-group .panel .panel-body .input-group .mt-element-overlay .mt-overlay-6 .mt-overlay {
+        padding-top: 20px;
+        padding-bottom: 20px; }
+        .verify-account-form .upload-section .form-group .panel .panel-body .input-group .mt-element-overlay .mt-overlay-6 .mt-overlay h2 {
+          padding: 0 0 5px 0;
+          margin-bottom: 10px;
+          margin-top: 0;
+          color: #333; }
+          .verify-account-form .upload-section .form-group .panel .panel-body .input-group .mt-element-overlay .mt-overlay-6 .mt-overlay h2:after {
+            background-color: #333; }
+        .verify-account-form .upload-section .form-group .panel .panel-body .input-group .mt-element-overlay .mt-overlay-6 .mt-overlay .bitmoon-dropzone {
+          background-size: 35px;
+          border: 2px dashed #333;
+          height: 175px;
+          width: 250px; }
+          @media (max-width: 812px) {
+            .verify-account-form .upload-section .form-group .panel .panel-body .input-group .mt-element-overlay .mt-overlay-6 .mt-overlay .bitmoon-dropzone {
+              width: 100%; } }
+          .verify-account-form .upload-section .form-group .panel .panel-body .input-group .mt-element-overlay .mt-overlay-6 .mt-overlay .bitmoon-dropzone .mt-element-step.upload-done {
+            cursor: default; }
+          .verify-account-form .upload-section .form-group .panel .panel-body .input-group .mt-element-overlay .mt-overlay-6 .mt-overlay .bitmoon-dropzone .mt-element-step .step-default {
+            height: 100%; }
+            .verify-account-form .upload-section .form-group .panel .panel-body .input-group .mt-element-overlay .mt-overlay-6 .mt-overlay .bitmoon-dropzone .mt-element-step .step-default .mt-step-col.done {
+              height: 100%; }
+              .verify-account-form .upload-section .form-group .panel .panel-body .input-group .mt-element-overlay .mt-overlay-6 .mt-overlay .bitmoon-dropzone .mt-element-step .step-default .mt-step-col.done .mt-step-number {
+                font-size: 16px;
+                padding: 3px 6px;
+                margin-bottom: 10px; }
+              .verify-account-form .upload-section .form-group .panel .panel-body .input-group .mt-element-overlay .mt-overlay-6 .mt-overlay .bitmoon-dropzone .mt-element-step .step-default .mt-step-col.done .mt-step-title {
+                font-size: 16px;
+                margin-bottom: 5px; }
+            .verify-account-form .upload-section .form-group .panel .panel-body .input-group .mt-element-overlay .mt-overlay-6 .mt-overlay .bitmoon-dropzone .mt-element-step .step-default.uploading .mt-step-col {
+              padding-top: 25%; }
+              .verify-account-form .upload-section .form-group .panel .panel-body .input-group .mt-element-overlay .mt-overlay-6 .mt-overlay .bitmoon-dropzone .mt-element-step .step-default.uploading .mt-step-col .mt-step-number {
+                padding: 10px 14px;
+                font-size: 20px;
+                margin-bottom: 0; }
+                .verify-account-form .upload-section .form-group .panel .panel-body .input-group .mt-element-overlay .mt-overlay-6 .mt-overlay .bitmoon-dropzone .mt-element-step .step-default.uploading .mt-step-col .mt-step-number i {
+                  color: #d38e1f; }
+    .verify-account-form .upload-section .form-group .panel .panel-body .input-group .mt-element-overlay .alert {
+      margin: 0;
+      padding: 5px; }
+  .verify-account-form .upload-section .image-description {
+    font-weight: 600;
+    font-style: italic;
+    margin-top: 10px; }
+  @media (max-width: 812px) {
+    .verify-account-form .upload-section .btn {
+      width: 100%; } }
+  .verify-account-form .upload-section .btn.btn-back {
+    margin-right: 15px; }
+    @media (max-width: 812px) {
+      .verify-account-form .upload-section .btn.btn-back {
+        margin-top: 15px; } }
+
+.verify-account-form .upload-step .mt-element-step.verification-step .step-line .mt-step-desc .mt-step-col .mt-step-number {
+  font-size: 18px;
+  height: 45px;
+  width: 45px;
+  padding: 8px;
+  font-weight: bold; }
+  .verify-account-form .upload-step .mt-element-step.verification-step .step-line .mt-step-desc .mt-step-col .mt-step-number i {
+    margin-top: 10px; }
+
+.verify-account-form .upload-step .mt-element-step.verification-step .step-line .mt-step-desc .mt-step-col .mt-step-title {
+  font-size: 14px; }
+  .verify-account-form .upload-step .mt-element-step.verification-step .step-line .mt-step-desc .mt-step-col .mt-step-title:after, .verify-account-form .upload-step .mt-element-step.verification-step .step-line .mt-step-desc .mt-step-col .mt-step-title:before {
+    top: -25px; }
+
+.verify-account-form .footer button {
+  display: block;
+  width: 200px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (max-width: 812px) {
+    .verify-account-form .footer button {
+      width: 100%; } }
+
+.verify-account-form .alert {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px; }
+  @media (max-width: 812px) {
+    .verify-account-form .alert {
+      width: 100%; } }
+
+/*# sourceMappingURL=verify_account.css.map */

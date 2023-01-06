@@ -1,0 +1,27 @@
+curl -sL https://rpm.nodesource.com/setup_9.x | bash -
+yum install -y nodejs
+yum install gcc-c++ make
+sudo yum install yarn
+sudo npm install -g pm2
+pm2 startup systemd
+
+yarn build
+pm2 start node_modules/react-scripts/scripts/start.js
+
+$ nvm list
+$ nvm ls-remote
+$ nvm install 8.2.1
+$ nvm use 8.2.1
+$ nvm alias default 8.2.1
+$ node -v
+$ npm install -g npm
+$ npm -v
+
+pm2 stop all
+pm2 delete all
+git pull
+rm -rf build
+cd server
+pm2 start bin/www
+
+Recaptcha: https://www.google.com/recaptcha/admin#list

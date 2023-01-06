@@ -1,0 +1,43 @@
+/* Variables */
+
+//Color
+$brown: #573911;
+$yellow: #d38e1f;
+$dark-yellow: #c27d0e;
+$light-gray: #f1f4f7;
+$dark-gray: #333;
+$silver: #aaa;
+$green: #26C281;
+$greenFaded: rgba(38, 194, 129, 0.753);
+$lightGreen: #ceffce;
+$blue: #3598dc;
+$red: #e7505a;
+
+//Font size
+$font18: 18px;
+$font16: 16px;
+$font14: 14px;
+$font12: 12px;
+
+// Responsive break point
+$mobile-screen-xs: "(max-width : 320px)";
+$mobile-screen: "(max-width : 812px)";
+$phablet-screen: "(min-width: 414px) and (max-width : 768px)";
+$menu-nav-head: "(max-width : 992px)";
+$mobile-and-tablet-screen: "(max-width : 1024)";
+$tablet-screen-portrait: "(min-width: 768px) and (max-width : 992px)";
+$tablet-screen: "(min-width: 769px) and (max-width : 1024px)";
+$desktop-screen: "(min-width : 1025px)";
+$large-widget-size: "(min-width : 700px)";
+$small-widget-size: "(max-width : 500px)";
+
+@mixin initAmated($name, $duration, $mode, $delay) {
+    -webkit-animation-name: $name;
+    animation-name: $name;
+    -webkit-animation-duration: $duration;
+    animation-duration: $duration;
+    -webkit-animation-fill-mode: $mode;
+    animation-fill-mode: $mode;
+    -webkit-animation-delay: $delay;
+    animation-delay: $delay;
+  }

@@ -1,0 +1,142 @@
+/* Variables */
+.referral.widget iframe {
+  overflow: hidden; }
+
+.referral.widget #EC54VAh-1530967207321 {
+  display: none; }
+
+@media (max-width: 500px) {
+  .referral {
+    padding: 0; } }
+
+.referral .list-group .list-group-item {
+  padding-top: 10px; }
+  .referral .list-group .list-group-item .label {
+    float: right;
+    padding: 5px 15px;
+    margin: 0;
+    font-size: 14px;
+    text-transform: inherit; }
+
+.referral .affiliate {
+  margin-top: 20px; }
+  .referral .affiliate .affiliate-script-content .row {
+    margin-top: 30px; }
+    @media (max-width: 500px) {
+      .referral .affiliate .affiliate-script-content .row {
+        margin: 0;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #aaa; } }
+    .referral .affiliate .affiliate-script-content .row .banner-title {
+      font-weight: 600;
+      margin-bottom: 10px; }
+      @media (max-width: 500px) {
+        .referral .affiliate .affiliate-script-content .row .banner-title {
+          margin-top: 10px; } }
+    .referral .affiliate .affiliate-script-content .row textarea {
+      resize: none; }
+
+.referral .price-table-design, .referral .mini-price-table-design {
+  max-height: 95px;
+  border: 1px solid #c2cad8; }
+
+.price-table.widget .react-bs-table-container .react-bs-table-tool-bar .col-md-6.col-lg-8 {
+  display: none; }
+
+.price-table.widget .react-bs-table-container .react-bs-table-tool-bar .col-lg-4 {
+  width: 100%; }
+  .price-table.widget .react-bs-table-container .react-bs-table-tool-bar .col-lg-4 .react-bs-table-search-form .form-control {
+    height: 30px;
+    font-size: 12px; }
+  .price-table.widget .react-bs-table-container .react-bs-table-tool-bar .col-lg-4 .react-bs-table-search-form .input-group-btn .btn {
+    height: auto; }
+
+@media (max-width: 500px) {
+  .price-table.widget .react-bs-table-container table thead tr th {
+    width: 30% !important;
+    font-size: 12px !important;
+    text-align: center !important; } }
+
+.price-table.widget .react-bs-table-container table thead tr th.ask-price-col-header {
+  display: none; }
+
+.price-table.widget .react-bs-table-container table thead tr th.change24-col-header {
+  display: table-cell !important; }
+
+@media (max-width: 500px) {
+  .price-table.widget .react-bs-table-container table thead tr th.action-button-col-header {
+    display: none !important; } }
+
+@media (max-width: 500px) {
+  .price-table.widget .react-bs-table-container table tbody tr td {
+    width: 30%; } }
+
+.price-table.widget .react-bs-table-container table tbody tr td.change24-col {
+  display: table-cell !important; }
+
+.price-table.widget .react-bs-table-container table tbody tr td.ask-price-col {
+  display: none; }
+
+@media (max-width: 500px) {
+  .price-table.widget .react-bs-table-container table tbody tr td.action-button-col {
+    display: none !important; } }
+
+@media (min-width: 700px) {
+  .price-table.widget .react-bs-table-container table tbody tr td.coin-name-col .btn {
+    padding: 2px; } }
+
+@media (max-width: 500px) {
+  .price-table.widget .react-bs-table-container table tbody tr td.coin-name-col .label {
+    padding: 2px 0; } }
+
+.price-table.widget .react-bs-table-container table tbody tr td.coin-name-col .label .coin-name {
+  display: none; }
+
+@media (max-width: 500px) {
+  .price-table.widget .react-bs-table-container table tbody tr td.coin-name-col .label .coin-code {
+    font-size: 12px; } }
+
+@media (min-width: 700px) {
+  .price-table.widget .react-bs-table-container table tbody tr td.action-button-col .btn {
+    padding: 5px; } }
+
+@media (min-width: 700px) {
+  .price-table.widget .react-bs-table-container table tbody tr td.bid-price-col {
+    width: auto !important;
+    padding-left: initial !important; } }
+
+@media (max-width: 500px) {
+  .price-table.widget .react-bs-table-container table tbody tr td.bid-price-col .price-text {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 35.5px; } }
+
+@media (max-width: 500px) {
+  .price-table.widget .react-bs-table-container .react-bs-table-pagination .col-xs-6 {
+    width: 100%; } }
+
+.price-table.widget .mini-price-table {
+  border: none;
+  font-weight: 600; }
+  .price-table.widget .mini-price-table .rt-table .rt-thead.-header {
+    display: none; }
+  .price-table.widget .mini-price-table .rt-table .rt-thead.-filters .rt-th .input-icon > input.form-control {
+    padding-left: 33px; }
+  .price-table.widget .mini-price-table .rt-table .rt-tr {
+    cursor: pointer; }
+  .price-table.widget .mini-price-table .rt-table .rt-td {
+    padding-left: 15px;
+    padding-right: 15px; }
+    .price-table.widget .mini-price-table .rt-table .rt-td span {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: block; }
+    .price-table.widget .mini-price-table .rt-table .rt-td .price-text {
+      margin-top: 5px;
+      display: inline-block; }
+      .price-table.widget .mini-price-table .rt-table .rt-td .price-text i {
+        display: none; }
+
+/*# sourceMappingURL=referral.css.map */

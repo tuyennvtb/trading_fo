@@ -1,0 +1,232 @@
+@import '../variables/variables';
+.verify-account-form {
+    .verification-step {
+        .mt-step-desc {
+            .verified-label {
+                width: 125px;
+                padding: 2px;
+                margin: 10px auto 0;
+                background-color: $dark-yellow;
+                color: white;
+                &.alert-success {
+                    background-color: $green;
+                }
+            }
+        }
+        .mt-step-col.active {
+            .mt-step-title {
+                color: $green !important;
+                &:before, &:after {
+                    background-color: $green;
+                }
+            }
+            .mt-step-content {
+                color: $green !important;
+            }
+            .mt-step-number {
+                background-color: $green !important;
+                color: white !important;
+                border-color: $green !important;
+            }
+        }
+    }
+    .verification-info {
+        width: 50%;
+        margin: 10px auto 40px;
+        @media #{$mobile-screen} {
+            width: 100%;
+        }
+        .title {
+            font-weight: bold;
+            color: $dark-yellow;
+        }
+        .content {
+            margin-top: 20px;
+        }
+    }
+    .upload-section {
+        transition: all 0.5s ease;
+        opacity: 0; 
+        height: 0;
+        max-height: 0;
+        min-height: 0;
+        overflow: hidden;
+        @media #{$desktop-screen} {
+            padding: 0 90px;
+        }
+        @media #{$mobile-screen} {
+            display: none;
+            opacity: 1;;
+            max-height: initial;
+            min-height: initial;
+            overflow: auto;
+        }
+        &.active {
+                opacity: 1;
+                height: auto;
+                transition: all 0.5s ease;
+                max-height: 450px;
+                min-height: 450px;
+            @media #{$mobile-screen} {
+                display: block;
+                max-height: initial;
+                min-height: initial;
+            }
+        }
+        .img-responsive {
+            @media #{$mobile-screen} {
+                margin: 0 auto;
+            }
+        }
+        .form-group {
+            .panel {
+                .panel-heading {
+                    .panel-title {
+                        font-weight: 600;
+                    }
+                }
+                .panel-body {
+                    padding: 0;
+                    .input-group {
+                        .mt-element-overlay {
+                            .mt-overlay-6 {
+                                background: $light-gray;
+                                img.bitmoon-image {
+                                    height: 257px;
+                                    visibility: hidden;
+                                }
+                                .mt-overlay {
+                                    padding-top: 20px;
+                                    padding-bottom: 20px;
+                                    h2 {
+                                        padding: 0 0 5px 0;
+                                        margin-bottom: 10px;
+                                        margin-top: 0;
+                                        color: $dark-gray;
+                                        &:after {
+                                            background-color: $dark-gray;
+                                        }
+                                    }
+                                    .bitmoon-dropzone {
+                                        background-size: 35px;
+                                        border: 2px dashed $dark-gray;
+                                        height: 175px;
+                                        width: 250px;
+                                        @media #{$mobile-screen} {
+                                            width: 100%;
+                                        }
+                                        .mt-element-step {
+                                            &.upload-done {
+                                                cursor: default;
+                                            }
+                                            .step-default {
+                                                height: 100%;
+                                                .mt-step-col.done {
+                                                    height: 100%;
+                                                    .mt-step-number {
+                                                        font-size: 16px;
+                                                        padding: 3px 6px;
+                                                        margin-bottom: 10px;
+                                                    }
+                                                    .mt-step-title {
+                                                        font-size: 16px;
+                                                        margin-bottom: 5px;
+                                                    }
+                                                }
+                                                &.uploading {
+                                                    .mt-step-col {
+                                                        padding-top: 25%;
+                                                        .mt-step-number {
+                                                            padding: 10px 14px;
+                                                            font-size: 20px;
+                                                            margin-bottom: 0;
+                                                            i {
+                                                                color: $yellow;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .alert {
+                                margin: 0;
+                                padding: 5px;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+        .image-description {
+            font-weight: 600;
+            font-style: italic;
+            margin-top: 10px;
+        }
+        .btn {
+            @media #{$mobile-screen} {
+                width: 100%;
+            }
+            &.btn-back {
+                margin-right: 15px;
+                @media #{$mobile-screen} {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+
+    .upload-step {
+        .mt-element-step.verification-step {
+            .step-line {
+                .mt-step-desc {
+                    .mt-step-col {
+                        .mt-step-number {
+                            font-size: 18px;
+                            height: 45px;
+                            width: 45px;
+                            padding: 8px;
+                            font-weight: bold;
+                            i {
+                                margin-top: 10px;
+                            }
+                        }
+                        .mt-step-title {
+                            font-size: 14px;
+                            &:after, &:before {
+                                top: -25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .footer {
+        button {
+            display: block;
+            width: 200px;
+            height: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            @media #{$mobile-screen} {
+                width: 100%;
+            }
+        }
+    }
+    .alert {
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px;
+        @media #{$mobile-screen} {
+            width: 100%;
+        }
+    }
+}

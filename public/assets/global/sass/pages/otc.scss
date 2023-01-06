@@ -1,0 +1,33 @@
+.otc-form-section {
+    .text-percent {
+        display: flex;
+        margin-right: -3px;
+        > a {
+            flex: 1 1;
+            padding: 2px 0;
+            text-align: center;
+            color: #c27d0e;
+            text-decoration: none;
+            border: 1px solid #c27d0e;
+            margin-right: 3px;
+            border-radius: 3px!important;
+            opacity: .4;
+        }
+
+        > a.text-yellow {
+            opacity: 1;
+            color: #f1f4f7;
+            background-color: #c27d0e;
+        }
+    }
+}
+
+.otc-list-data {
+    .ReactTable {
+        .rt-tbody{
+            .rt-tr-group{
+                height: 41px !important;
+            }
+        }
+    }
+}

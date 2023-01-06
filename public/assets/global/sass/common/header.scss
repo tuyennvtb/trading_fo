@@ -1,0 +1,39 @@
+@import '../variables/variables';
+
+@media #{$mobile-screen} {
+    body .bitmoon-page .page-header.navbar {
+        min-height: 0;
+        height: 60px;
+
+        & > .page-header-inner {
+            height: 100%;
+
+            .page-logo {
+                height: 100%;
+
+                & > a {
+                    height: 100%;
+                }
+
+                .logo-default {
+                    margin: 0 10px 0;
+                    height: 100%;
+                    width: auto;
+                }
+            }
+
+            .extended-user-action-link .navbar-nav {
+                margin-top: 20px;
+            }
+
+            .page-actions {
+                margin-top: 2px;
+            }
+
+            .menu-toggler.responsive-toggler {
+                margin-top: 15px;
+                display: inline-block !important;
+            }
+        }
+    }
+}

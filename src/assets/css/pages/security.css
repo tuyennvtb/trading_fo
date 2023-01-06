@@ -1,0 +1,21 @@
+/* Variables */
+@media (max-width: 812px) {
+  .security-page .portlet .alert .btn {
+    width: 100%;
+    height: auto; }
+    .security-page .portlet .alert .btn span {
+      white-space: normal; } }
+
+@media (max-width: 812px) {
+  .security-page .portlet .portlet-body .container {
+    padding: 0;
+    width: 100%; } }
+
+@media (max-width: 812px) {
+  .security-page .portlet .portlet-body .container .guide .btn {
+    width: 100%;
+    height: auto;
+    white-space: normal;
+    margin-bottom: 10px; } }
+
+/*# sourceMappingURL=security.css.map */

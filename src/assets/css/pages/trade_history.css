@@ -1,0 +1,114 @@
+/* Variables */
+
+@media (max-width: 812px) {
+    .exchange.trade-history .order-table-container .react-bs-table table.table thead tr th.type-col-header {
+        display: none;
+    }
+}
+
+@media (max-width: 812px) {
+    .exchange.trade-history .order-table-container .react-bs-table table.table tbody tr td {
+        width: 30%;
+    }
+}
+
+@media (max-width: 812px) {
+    .exchange.trade-history .order-table-container .react-bs-table table.table tbody tr td.type-col {
+        display: none;
+    }
+}
+
+@media (max-width: 812px) {
+    .exchange.trade-history>.row>.col-md-12 {
+        padding: 0;
+    }
+    .exchange.trade-history>.row>.col-md-12 .portlet-body {
+        padding: 10px;
+    }
+    .exchange.trade-history>.row>.col-md-12 .react-bs-container-body table {
+        display: block;
+    }
+    .exchange.trade-history>.row>.col-md-12 .react-bs-container-body table.table .row-table.row-table {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 13px;
+        outline: none;
+        margin-top: 15px;
+        position: relative;
+    }
+    .exchange.trade-history>.row>.col-md-12 .react-bs-container-body table.table .row-table.row-table.row-table--sell .coin-name {
+        background-color: #ed6b75;
+    }
+    .exchange.trade-history>.row>.col-md-12 .react-bs-container-body table.table .row-table.row-table.row-table--buy .coin-name {
+        background-color: #26c281;
+    }
+    .exchange.trade-history>.row>.col-md-12 .react-bs-container-body table.table .row-table.row-table td {
+        width: 100%;
+        padding: 0;
+        border: none;
+        outline: none;
+    }
+    .exchange.trade-history>.row>.col-md-12 .react-bs-container-body table.table .row-table.row-table td a.btn.has-tooltip {
+        padding: 5px;
+        margin-left: 5px;
+    }
+    .exchange.trade-history>.row>.col-md-12 .react-bs-container-body table.table .row-table.row-table td p.title {
+        margin-bottom: 7px;
+        display: flex;
+    }
+    .exchange.trade-history>.row>.col-md-12 .react-bs-container-body table.table .row-table.row-table td .data-fill {
+        color: #56aae8;
+    }
+    .exchange.trade-history>.row>.col-md-12 .react-bs-container-body table.table .row-table.row-table .coin-name {
+        display: block;
+        color: white;
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+    .exchange.trade-history>.row>.col-md-12 .react-bs-container-body table.table .row-table.row-table .title {
+        font-weight: bold;
+    }
+    .exchange.trade-history>.row>.col-md-12 .react-bs-container-body table.table .row-table.row-table .transaction-content {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+    .exchange.trade-history>.row>.col-md-12 .react-bs-container-body table.table .row-table.row-table .transaction-content .transaction-content__title {
+        font-weight: 700;
+    }
+    .exchange.trade-history>.row>.col-md-12 .react-bs-container-body table.table .row-table.row-table .transaction-content .status.transaction-content__value {
+        width: auto;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .exchange.trade-history>.row>.col-md-12 .react-bs-container-body table.table .row-table.row-table .btn-circle.cancel-order {
+        top: 40px;
+        right: 5px;
+        position: absolute;
+    }
+    .exchange.trade-history>.row>.col-md-12 .react-bs-table-pagination .dropdown-toggle {
+        display: none;
+    }
+    .exchange.trade-history .order-table-container .react-bs-table table.table tbody tr td div .id-order {
+        font-size: 13px;
+        text-align: left;
+    }
+    .exchange.trade-history .order-table-container .react-bs-table table.table tbody tr td div .id-order>* {
+        flex: 1;
+        padding: 5px 0;
+    }
+    .exchange.trade-history .order-table-container .react-bs-table table.table tbody tr td div .id-order .btn {
+        padding: 5px;
+        margin-left: 5px;
+        color: #f1f4f7;
+        background-color: #d38e1f;
+        border-radius: 3px !important;
+    }
+    .exchange.trade-history .order-table-container .react-bs-table table.table tbody tr td {
+        width: 100%;
+        text-align: left !important;
+        font-size: 13px;
+    }
+}
+
+
+/*# sourceMappingURL=trade_history.css.map */

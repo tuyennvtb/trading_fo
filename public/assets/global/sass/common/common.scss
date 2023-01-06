@@ -1,0 +1,468 @@
+@import '../variables/variables';
+.coin-svg {
+    margin-right: 5px;
+    font-size: 20px;
+    position: relative;
+    top: 2px;
+    color: #53AE94;
+}
+
+.coin-code {
+    width: 30px !important;
+    display: inline-block;
+}
+
+.exchange.trade-history {
+    .order-table-container {
+        .react-bs-table {
+            table.table {
+                thead {
+                    tr {
+                        th {
+                            &.type-col-header {
+                                @media #{$mobile-screen} {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            @media #{$mobile-screen} {
+                                width: 30%;
+                            }
+                            &.type-col {
+                                @media #{$mobile-screen} {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .exchange.trade-history {
+        .row>.col-md-12 {
+            .portlet-body {
+                padding: 10px;
+            }
+            .react-bs-container-body {
+                table {
+                    display: block;
+                }
+                table.table .row-table.row-table {
+                    display: flex;
+                    flex-wrap: wrap;
+                    font-size: 13px;
+                    outline: none;
+                    margin-top: 15px;
+                    position: relative;
+                    &.row-table--sell {
+                        .coin-name {
+                            background-color: #ed6b75;
+                        }
+                    }
+                    &.row-table--buy {
+                        .coin-name {
+                            background-color: #26c281;
+                        }
+                    }
+                    td {
+                        width: 100%;
+                        padding: 0;
+                        border: none;
+                        outline: none;
+                        a.btn.has-tooltip {
+                            padding: 5px;
+                            margin-left: 5px;
+                        }
+                        p.title {
+                            margin-bottom: 7px;
+                            display: flex;
+                        }
+                        .data-fill {
+                            color: #56aae8;
+                        }
+                    }
+                    .coin-name {
+                        display: block;
+                        color: white;
+                        font-size: 14px;
+                        padding: 5px 10px;
+                    }
+                    .title {
+                        font-weight: bold;
+                    }
+                    .transaction-content {
+                        font-size: 13px;
+                        margin-bottom: 5px;
+                        .transaction-content__title {
+                            font-weight: 700;
+                        }
+                        .status.transaction-content__value {
+                            width: auto;
+                            display: inline-block;
+                            vertical-align: middle;
+                        }
+                    }
+                    .btn-circle.cancel-order {
+                        top: 40px;
+                        right: 5px;
+                        position: absolute;
+                    }
+                }
+            }
+            .react-bs-table-pagination {
+                .dropdown-toggle {
+                    display: none;
+                }
+            }
+        }
+        .order-table-container {
+            .react-bs-table table.table tbody tr td div {
+                .id-order {
+                    font-size: 13px;
+                    text-align: left;
+                    &>* {
+                        flex: 1;
+                        padding: 5px 0;
+                    }
+                    .btn {
+                        padding: 5px;
+                        margin-left: 5px;
+                        color: $light-gray;
+                        background-color: $yellow;
+                        border-radius: 3px !important;
+                    }
+                }
+            }
+        }
+    }
+    .exchange.trade-history .order-table-container .react-bs-table table.table tbody tr td {
+        width: 100%;
+        text-align: left !important;
+        font-size: 13px;
+    }
+}
+
+.calculator-widget input {
+    height: 36px;
+    &.input-left {
+        border-right: 0px;
+    }
+}
+
+.mobile-col {
+    width: 100%;
+    .item-address {
+        word-break: break-word;
+        white-space: pre-wrap;
+    }
+    span.label {
+        margin: 0px !important;
+        width: 100% !important;
+    }
+    p.title {
+        margin-bottom: 10px;
+    }
+}
+
+.w-3 {
+    width: 300px !important;
+    @media (min-width: 1600px) {
+        width: 400px !important;
+    }
+}
+
+.mt-50 {
+    margin-top: 50px !important;
+}
+
+.mt-30 {
+    margin-top: 30px !important;
+}
+
+.mt-15 {
+    margin-top: 15px !important;
+}
+
+.mt-10 {
+    margin-top: 10px !important;
+}
+
+.mb-15 {
+    margin-bottom: 15px !important;
+}
+
+.mb-20 {
+    margin-bottom: 20px !important;
+}
+
+.ml-15 {
+    margin-left: 15px !important;
+}
+
+.mr-15 {
+    margin-right: 15px !important;
+}
+
+.hidden-xs.show,
+.hidden-sm .show {
+    display: block !important;
+}
+
+span.title {
+    color: #d38e1f;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+@media (max-width: 812px) {
+    .react-bs-table-tool-bar .col-lg-8 {
+        width: 100%;
+    }
+    .nav-mobile {
+        z-index: 1;
+        display: -webkit-flexbox;
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 0;
+        position: relative;
+        text-transform: uppercase;
+        li {
+            flex: 1 1;
+            background: #fff7ed87;
+            &.active {
+                border-bottom: 1px solid #d38e1f;
+                a {
+                    color: #d38e1f;
+                    font-weight: 600;
+                    &:hover {
+                        color: #d38e1f;
+                    }
+                }
+            }
+        }
+        &.nav-justified>li>a,
+        &.nav-tabs.nav-justified>li>a {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.left {
+    float: left !important;
+}
+
+.right {
+    float: right !important;
+}
+
+.pt-75 {
+    padding-top: 75px;
+}
+
+.col-title {
+    font-size: 14px;
+    padding: 5px 10px;
+    color:white;
+    &.green-bg {
+        background-color: #26c281;
+    }
+    
+    &.red-bg {
+        background-color: #ed6b75;
+    }
+}
+
+#order-trade .react-bs-container-header {
+    display: none;
+}
+
+#history-box-content {
+    padding: 0 20px;
+    font-size: 14px;
+    color: #4d4d4d;
+    overflow: auto;
+    min-height: 400px;
+}
+
+#history-box-content .react-bs-table {
+    min-height: 320px;
+}
+
+.menu-bar {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 99;
+    width: 100%;
+    top: 0;
+    background-color: #fff;
+    padding-left: 0;
+    padding-right: 0;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 4px 4px 0 0;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-bottom: 1px solid #EAECEF;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    .menu-bar-container {
+        box-sizing: border-box;
+        margin: 0;
+        min-width: 0;
+        width: 100%;
+        .list-item-menu {
+            padding: 0px 20px;
+            box-sizing: border-box;
+            margin: 0;
+            min-width: 0;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            overflow: auto;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            .item-menu {
+                box-sizing: border-box;
+                margin: 0;
+                min-width: 0;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex: none;
+                -ms-flex: none;
+                flex: none;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                margin-right: 24px;
+                .item-content{
+                    box-sizing: border-box;
+                    margin: 0;
+                    min-width: 0;
+                    padding-top: 16px;
+                    padding-bottom: 16px;
+                    font-size: 14px;
+                    color: #1E2026;
+                    position: relative;
+                    white-space: nowrap;
+                    font-weight: 500;
+                    cursor: pointer;
+                }
+                &.active {
+                    .item-content>span{
+                        font-weight: 600;
+                    }
+                    .item-content:after {
+                        content: "";
+                        width: 100%;
+                        left: 0;
+                        height: 3px;
+                        position: absolute;
+                        bottom: 0px;
+                        background-color: #F0B90B;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.alert-secondary {
+    color: #383d41;
+    background-color: #e2e3e5;
+    border-color: #d6d8db;
+}
+
+button.buy-outline-btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 5px 14px !important;
+    font-size: 1rem;
+    color: #28a745;
+    background-color: transparent;
+    background-image: none;
+    border-color: #28a745;
+    &:hover{
+        color: #fff;
+        background-color: #28a745;
+        border-color: #28a745;
+    }
+    &:focus {
+        color: #28a745;
+    }
+}
+
+.buy-color {
+    color: #28a745;
+}
+
+button.sell-outline-btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 5px 14px !important;
+    font-size: 1rem;
+    color: #dc3545;
+    background-color: transparent;
+    background-image: none;
+    border-color: #dc3545;
+    &:hover{
+        color: #fff;
+        background-color: #dc3545;
+        border-color: #dc3545;
+    }
+    &:focus {
+        color: #dc3545;
+    }
+}
+
+.sell-color {
+    color: #dc3545;
+}
+
+.break-text {
+    white-space: break-spaces;
+    word-break: break-all;
+}

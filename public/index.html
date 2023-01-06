@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html>
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+
+<head>
+  <meta charset="utf-8" />
+  <title>Sàn Giao Dịch Bitcoin, Ethereum, Ripple, USDT, Tiền Điện Tử, Tiền Ảo - Bitmoon.net</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover" />
+  <meta name="description" content="Sàn giao dịch bitmoon.net cung cấp giải pháp mua bán BTC, ETH, XRP, DOGE, LTC, ZEC, DASH, tiền điện tử, tiền ảo uy tín và an toàn nhất tại Việt Nam." />
+  <meta content="" name="keywords" />
+  <meta content="" name="author" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <!-- BEGIN GLOBAL MANDATORY STYLES -->
+  <% var cache_version = + new Date() %>
+
+  <link rel="preload stylesheet" onerror="this.rel='stylesheet'" as="style" onload="this.onload=null; this.rel='stylesheet'" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" type="text/css" /> 
+  <link rel="preload stylesheet" onerror="this.rel='stylesheet'" onload="this.onload=null; this.rel='stylesheet'" as="style" href="%PUBLIC_URL%/assets/global/plugins/coin/css/cryptofont.css?v=<%= cache_version %>" type="text/css" />
+  <link rel="preload stylesheet" onerror="this.rel='stylesheet'" onload="this.onload=null; this.rel='stylesheet'" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css?v=<%= cache_version %>" type="text/css" />
+  <link rel="preload stylesheet" onerror="this.rel='stylesheet'" onload="this.onload=null; this.rel='stylesheet'" href="%PUBLIC_URL%/assets/global/plugins/coin/fonts/cryptofont-webfont.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" type="text/css" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/global/plugins/coin/css/cryptofont.css?v=<%= cache_version %>" type="text/css" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/global/static/app.min.css?v=<%= cache_version %>" type="text/css" />
+    <link rel="stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css?v=<%= cache_version %>" type="text/css" />
+  </noscript>
+
+        <!-- END THEME LAYOUT STYLES -->
+        <link rel="shortcut icon" href="favicon.ico" />
+
+        <!-- Google Tag Manager -->
+        <script>
+            (function(w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js'
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-P28Q4B6');
+        </script>
+        <!-- End Google Tag Manager -->
+        <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+
+        <!-- Start Google Site Verification -->
+        <meta name="google-site-verification" content="cuK6Ncz_Tq7IUv5QUztUFkp1Evd9ry9jpRw_QU6G7Gw" />
+        <!-- End Google Site Verification -->
+</head>
+<!-- END HEAD -->
+
+<body class="page-container-bg-solid page-header page-sidebar-closed-hide-logo page-md">
+    <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+
+    <!-- BEGIN CONTAINER -->
+    <div id="root" class="bitmoon-page"></div>
+    <!-- END CONTAINER -->
+
+    <!--[if lt IE 9]>
+<script src="%PUBLIC_URL%/assets/global/plugins/respond.min.js"></script>
+<script src="%PUBLIC_URL%/assets/global/plugins/excanvas.min.js"></script> 
+<script src="%PUBLIC_URL%/assets/global/plugins/ie8.fix.min.js"></script> 
+<![endif]-->
+    <!-- BEGIN CORE PLUGINS -->
+    <script rel="preload" as="script" src="%PUBLIC_URL%/assets/global/scripts/core.min.js?v=<%= cache_version %>" type="text/javascript"></script>
+    <script rel="preload" as="script" src="%PUBLIC_URL%/assets/global/scripts/crypto-js.min.js?v=<%= cache_version %>" type="text/javascript"></script>
+    <script src="%PUBLIC_URL%/assets/global/scripts/hmac-sha256.min.js?v=<%= cache_version %>" type="text/javascript"></script>
+    <script src="%PUBLIC_URL%/assets/global/scripts/enc-base64.min.js?v=<%= cache_version %>" type="text/javascript"></script>
+    <script src="%PUBLIC_URL%/assets/global/scripts/accounting.min.js?v=<%= cache_version %>" type="text/javascript"></script>
+    <script src="%PUBLIC_URL%/assets/global/plugins/clipboard.min.js?v=<%= cache_version %>" type="text/javascript"></script>
+    <script src="%PUBLIC_URL%/assets/global/scripts/lazy-load.min.js?v=<%= cache_version %>" type="text/javascript"></script>
+
+    <script>
+        window.isInitTawkTo = false;
+        new ClipboardJS('.btn');
+    </script>
+
+</body>
+
+</html>
